@@ -7,16 +7,20 @@
       "RelativeMoniker": "D:0:0:{A7E20AE8-8CC9-47CF-9FE6-9459E062D0AA}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\iniciosesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A7E20AE8-8CC9-47CF-9FE6-9459E062D0AA}|Restaurante\\Restaurante.csproj|c:\\users\\karen\\source\\repos\\proyecto-sistema-de-gesti-n-y-an-lisis-de-datos-\\restaurante\\frm4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7E20AE8-8CC9-47CF-9FE6-9459E062D0AA}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\frm4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7E20AE8-8CC9-47CF-9FE6-9459E062D0AA}|Restaurante\\Restaurante.csproj|C:\\Users\\karen\\source\\repos\\Proyecto-Sistema-de-Gesti-n-y-An-lisis-de-Datos-\\restaurante\\iniciosesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A7E20AE8-8CC9-47CF-9FE6-9459E062D0AA}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\iniciosesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A7E20AE8-8CC9-47CF-9FE6-9459E062D0AA}|Restaurante\\Restaurante.csproj|C:\\Users\\karen\\source\\repos\\Proyecto-Sistema-de-Gesti-n-y-An-lisis-de-Datos-\\restaurante\\frm4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{A7E20AE8-8CC9-47CF-9FE6-9459E062D0AA}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\frm4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A7E20AE8-8CC9-47CF-9FE6-9459E062D0AA}|Restaurante\\Restaurante.csproj|C:\\Users\\karen\\source\\repos\\Proyecto-Sistema-de-Gesti-n-y-An-lisis-de-Datos-\\restaurante\\menu_principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{A7E20AE8-8CC9-47CF-9FE6-9459E062D0AA}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\menu_principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A7E20AE8-8CC9-47CF-9FE6-9459E062D0AA}|Restaurante\\Restaurante.csproj|C:\\Users\\karen\\source\\repos\\Proyecto-Sistema-de-Gesti-n-y-An-lisis-de-Datos-\\restaurante\\iniciosesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A7E20AE8-8CC9-47CF-9FE6-9459E062D0AA}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\iniciosesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A7E20AE8-8CC9-47CF-9FE6-9459E062D0AA}|Restaurante\\Restaurante.csproj|C:\\Users\\karen\\source\\repos\\Proyecto-Sistema-de-Gesti-n-y-An-lisis-de-Datos-\\restaurante\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -46,11 +50,20 @@
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Frm4.cs",
+              "DocumentMoniker": "C:\\Users\\karen\\source\\repos\\Proyecto-Sistema-de-Gesti-n-y-An-lisis-de-Datos-\\Restaurante\\Frm4.cs",
+              "RelativeDocumentMoniker": "Restaurante\\Frm4.cs",
+              "ToolTip": "C:\\Users\\karen\\source\\repos\\Proyecto-Sistema-de-Gesti-n-y-An-lisis-de-Datos-\\Restaurante\\Frm4.cs",
+              "RelativeToolTip": "Restaurante\\Frm4.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAwwJ0AAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-31T23:37:31.231Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -60,25 +73,26 @@
               "RelativeDocumentMoniker": "Restaurante\\InicioSesion.cs",
               "ToolTip": "C:\\Users\\karen\\source\\repos\\Proyecto-Sistema-de-Gesti-n-y-An-lisis-de-Datos-\\Restaurante\\InicioSesion.cs",
               "RelativeToolTip": "Restaurante\\InicioSesion.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAYwHAAAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAACUAAAAAAAAAAAAkwHAAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-31T22:59:09.066Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "InicioSesion.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\karen\\source\\repos\\Proyecto-Sistema-de-Gesti-n-y-An-lisis-de-Datos-\\Restaurante\\InicioSesion.cs",
               "RelativeDocumentMoniker": "Restaurante\\InicioSesion.cs",
               "ToolTip": "C:\\Users\\karen\\source\\repos\\Proyecto-Sistema-de-Gesti-n-y-An-lisis-de-Datos-\\Restaurante\\InicioSesion.cs [Dise\u00F1o]",
               "RelativeToolTip": "Restaurante\\InicioSesion.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-31T22:52:58.937Z"
+              "WhenOpened": "2026-10-31T22:52:58.937Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Menu_Principal.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\karen\\source\\repos\\Proyecto-Sistema-de-Gesti-n-y-An-lisis-de-Datos-\\Restaurante\\Menu_Principal.cs",
               "RelativeDocumentMoniker": "Restaurante\\Menu_Principal.cs",
@@ -89,18 +103,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Frm4.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\karen\\source\\repos\\Proyecto-Sistema-de-Gesti-n-y-An-lisis-de-Datos-\\Restaurante\\Frm4.cs",
               "RelativeDocumentMoniker": "Restaurante\\Frm4.cs",
               "ToolTip": "C:\\Users\\karen\\source\\repos\\Proyecto-Sistema-de-Gesti-n-y-An-lisis-de-Datos-\\Restaurante\\Frm4.cs [Dise\u00F1o]",
               "RelativeToolTip": "Restaurante\\Frm4.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-30T21:16:39.829Z"
+              "WhenOpened": "2026-10-30T21:16:39.829Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\karen\\source\\repos\\Proyecto-Sistema-de-Gesti-n-y-An-lisis-de-Datos-\\Restaurante\\Form1.cs",
               "RelativeDocumentMoniker": "Restaurante\\Form1.cs",
@@ -112,7 +127,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Form1.Designer.cs",
               "DocumentMoniker": "C:\\Users\\karen\\source\\repos\\Proyecto-Sistema-de-Gesti-n-y-An-lisis-de-Datos-\\Restaurante\\Form1.Designer.cs",
               "RelativeDocumentMoniker": "Restaurante\\Form1.Designer.cs",
@@ -124,7 +139,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\karen\\source\\repos\\Proyecto-Sistema-de-Gesti-n-y-An-lisis-de-Datos-\\Restaurante\\Program.cs",
               "RelativeDocumentMoniker": "Restaurante\\Program.cs",
@@ -136,7 +151,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Form1.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\karen\\source\\repos\\Proyecto-Sistema-de-Gesti-n-y-An-lisis-de-Datos-\\Restaurante\\Form1.cs",
               "RelativeDocumentMoniker": "Restaurante\\Form1.cs",
