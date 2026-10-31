@@ -1,144 +1,116 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\David\\source\\repos\\Proyecto-Sistema-de-Gesti-n-y-An-lisis-de-Datos-\\",
+  "WorkspaceRootPath": "C:\\Users\\yolan\\source\\repos\\Proyecto-Sistema-de-Gesti-n-y-An-lisis-de-Datos-\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A7E20AE8-8CC9-47CF-9FE6-9459E062D0AA}|Restaurante\\Restaurante.csproj|c:\\users\\david\\source\\repos\\proyecto-sistema-de-gesti-n-y-an-lisis-de-datos-\\restaurante\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A7E20AE8-8CC9-47CF-9FE6-9459E062D0AA}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A7E20AE8-8CC9-47CF-9FE6-9459E062D0AA}|Restaurante\\Restaurante.csproj|C:\\Users\\yolan\\source\\repos\\Proyecto-Sistema-de-Gesti-n-y-An-lisis-de-Datos-\\restaurante\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A7E20AE8-8CC9-47CF-9FE6-9459E062D0AA}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A7E20AE8-8CC9-47CF-9FE6-9459E062D0AA}|Restaurante\\Restaurante.csproj|c:\\users\\david\\source\\repos\\proyecto-sistema-de-gesti-n-y-an-lisis-de-datos-\\restaurante\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A7E20AE8-8CC9-47CF-9FE6-9459E062D0AA}|Restaurante\\Restaurante.csproj|c:\\users\\yolan\\source\\repos\\proyecto-sistema-de-gesti-n-y-an-lisis-de-datos-\\restaurante\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A7E20AE8-8CC9-47CF-9FE6-9459E062D0AA}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|Restaurante||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A7E20AE8-8CC9-47CF-9FE6-9459E062D0AA}|Restaurante\\Restaurante.csproj|c:\\users\\david\\source\\repos\\proyecto-sistema-de-gesti-n-y-an-lisis-de-datos-\\restaurante\\frm4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A7E20AE8-8CC9-47CF-9FE6-9459E062D0AA}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\frm4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A7E20AE8-8CC9-47CF-9FE6-9459E062D0AA}|Restaurante\\Restaurante.csproj|c:\\users\\david\\source\\repos\\proyecto-sistema-de-gesti-n-y-an-lisis-de-datos-\\restaurante\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A7E20AE8-8CC9-47CF-9FE6-9459E062D0AA}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A7E20AE8-8CC9-47CF-9FE6-9459E062D0AA}|Restaurante\\Restaurante.csproj|c:\\users\\david\\source\\repos\\proyecto-sistema-de-gesti-n-y-an-lisis-de-datos-\\restaurante\\frm4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A7E20AE8-8CC9-47CF-9FE6-9459E062D0AA}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\frm4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A7E20AE8-8CC9-47CF-9FE6-9459E062D0AA}|Restaurante\\Restaurante.csproj|c:\\users\\david\\source\\repos\\proyecto-sistema-de-gesti-n-y-an-lisis-de-datos-\\restaurante\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{A7E20AE8-8CC9-47CF-9FE6-9459E062D0AA}|Restaurante\\Restaurante.csproj|C:\\Users\\yolan\\source\\repos\\Proyecto-Sistema-de-Gesti-n-y-An-lisis-de-Datos-\\restaurante\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{A7E20AE8-8CC9-47CF-9FE6-9459E062D0AA}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A7E20AE8-8CC9-47CF-9FE6-9459E062D0AA}|Restaurante\\Restaurante.csproj|c:\\users\\david\\source\\repos\\proyecto-sistema-de-gesti-n-y-an-lisis-de-datos-\\restaurante\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|5e9a8ac2-4f34-4521-858f-4c248ba31532"
+      "AbsoluteMoniker": "D:0:0:{A7E20AE8-8CC9-47CF-9FE6-9459E062D0AA}|Restaurante\\Restaurante.csproj|c:\\users\\yolan\\source\\repos\\proyecto-sistema-de-gesti-n-y-an-lisis-de-datos-\\restaurante\\frm4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A7E20AE8-8CC9-47CF-9FE6-9459E062D0AA}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\frm4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7E20AE8-8CC9-47CF-9FE6-9459E062D0AA}|Restaurante\\Restaurante.csproj|c:\\users\\yolan\\source\\repos\\proyecto-sistema-de-gesti-n-y-an-lisis-de-datos-\\restaurante\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A7E20AE8-8CC9-47CF-9FE6-9459E062D0AA}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
     {
-      "Orientation": 0,
+      "Orientation": 1,
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 320,
-          "SelectedChildIndex": 4,
+          "DockedHeight": 211,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Frm4.cs",
-              "DocumentMoniker": "C:\\Users\\David\\source\\repos\\Proyecto-Sistema-de-Gesti-n-y-An-lisis-de-Datos-\\Restaurante\\Frm4.cs",
-              "RelativeDocumentMoniker": "Restaurante\\Frm4.cs",
-              "ToolTip": "C:\\Users\\David\\source\\repos\\Proyecto-Sistema-de-Gesti-n-y-An-lisis-de-Datos-\\Restaurante\\Frm4.cs*",
-              "RelativeToolTip": "Restaurante\\Frm4.cs*",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAnwBUAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "Form1.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\yolan\\source\\repos\\Proyecto-Sistema-de-Gesti-n-y-An-lisis-de-Datos-\\Restaurante\\Form1.cs",
+              "RelativeDocumentMoniker": "Restaurante\\Form1.cs",
+              "ToolTip": "C:\\Users\\yolan\\source\\repos\\Proyecto-Sistema-de-Gesti-n-y-An-lisis-de-Datos-\\Restaurante\\Form1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Restaurante\\Form1.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-30T21:21:44.386Z",
+              "WhenOpened": "2026-10-31T20:24:10.501Z",
+              "IsPinned": true,
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\yolan\\source\\repos\\Proyecto-Sistema-de-Gesti-n-y-An-lisis-de-Datos-\\Restaurante\\Form1.cs",
+              "RelativeDocumentMoniker": "Restaurante\\Form1.cs",
+              "ToolTip": "C:\\Users\\yolan\\source\\repos\\Proyecto-Sistema-de-Gesti-n-y-An-lisis-de-Datos-\\Restaurante\\Form1.cs",
+              "RelativeToolTip": "Restaurante\\Form1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-31T21:52:32.271Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "Frm4.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\David\\source\\repos\\Proyecto-Sistema-de-Gesti-n-y-An-lisis-de-Datos-\\Restaurante\\Frm4.cs",
+              "DocumentMoniker": "C:\\Users\\yolan\\source\\repos\\Proyecto-Sistema-de-Gesti-n-y-An-lisis-de-Datos-\\Restaurante\\Frm4.cs",
               "RelativeDocumentMoniker": "Restaurante\\Frm4.cs",
-              "ToolTip": "C:\\Users\\David\\source\\repos\\Proyecto-Sistema-de-Gesti-n-y-An-lisis-de-Datos-\\Restaurante\\Frm4.cs [Dise\u00F1o]*",
-              "RelativeToolTip": "Restaurante\\Frm4.cs [Dise\u00F1o]*",
+              "ToolTip": "C:\\Users\\yolan\\source\\repos\\Proyecto-Sistema-de-Gesti-n-y-An-lisis-de-Datos-\\Restaurante\\Frm4.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Restaurante\\Frm4.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-30T21:16:39.829Z",
+              "WhenOpened": "2026-10-31T21:51:31.242Z",
               "EditorCaption": " [Dise\u00F1o]"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Restaurante",
-              "DocumentMoniker": "C:\\Users\\David\\source\\repos\\Proyecto-Sistema-de-Gesti-n-y-An-lisis-de-Datos-\\Restaurante\\Restaurante.csproj",
-              "RelativeDocumentMoniker": "Restaurante\\Restaurante.csproj",
-              "ToolTip": "C:\\Users\\David\\source\\repos\\Proyecto-Sistema-de-Gesti-n-y-An-lisis-de-Datos-\\Restaurante\\Restaurante.csproj*",
-              "RelativeToolTip": "Restaurante\\Restaurante.csproj*",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-10-30T20:56:03.108Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\David\\source\\repos\\Proyecto-Sistema-de-Gesti-n-y-An-lisis-de-Datos-\\Restaurante\\Form1.cs",
-              "RelativeDocumentMoniker": "Restaurante\\Form1.cs",
-              "ToolTip": "C:\\Users\\David\\source\\repos\\Proyecto-Sistema-de-Gesti-n-y-An-lisis-de-Datos-\\Restaurante\\Form1.cs",
-              "RelativeToolTip": "Restaurante\\Form1.cs",
-              "ViewState": "AgIAAGUAAAAAAAAAAAAiwHsAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-30T18:59:28.463Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Form1.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\David\\source\\repos\\Proyecto-Sistema-de-Gesti-n-y-An-lisis-de-Datos-\\Restaurante\\Form1.Designer.cs",
-              "RelativeDocumentMoniker": "Restaurante\\Form1.Designer.cs",
-              "ToolTip": "C:\\Users\\David\\source\\repos\\Proyecto-Sistema-de-Gesti-n-y-An-lisis-de-Datos-\\Restaurante\\Form1.Designer.cs",
-              "RelativeToolTip": "Restaurante\\Form1.Designer.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAEwLIAAAA6AAAAAAAAAA==",
+              "Title": "Form2.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\yolan\\source\\repos\\Proyecto-Sistema-de-Gesti-n-y-An-lisis-de-Datos-\\Restaurante\\Form2.cs",
+              "RelativeDocumentMoniker": "Restaurante\\Form2.cs",
+              "ToolTip": "C:\\Users\\yolan\\source\\repos\\Proyecto-Sistema-de-Gesti-n-y-An-lisis-de-Datos-\\Restaurante\\Form2.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Restaurante\\Form2.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-30T19:41:43.114Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-31T20:24:10.509Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\David\\source\\repos\\Proyecto-Sistema-de-Gesti-n-y-An-lisis-de-Datos-\\Restaurante\\Program.cs",
-              "RelativeDocumentMoniker": "Restaurante\\Program.cs",
-              "ToolTip": "C:\\Users\\David\\source\\repos\\Proyecto-Sistema-de-Gesti-n-y-An-lisis-de-Datos-\\Restaurante\\Program.cs",
-              "RelativeToolTip": "Restaurante\\Program.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
+              "Title": "Form3.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\yolan\\source\\repos\\Proyecto-Sistema-de-Gesti-n-y-An-lisis-de-Datos-\\Restaurante\\Form3.cs",
+              "RelativeDocumentMoniker": "Restaurante\\Form3.cs",
+              "ToolTip": "C:\\Users\\yolan\\source\\repos\\Proyecto-Sistema-de-Gesti-n-y-An-lisis-de-Datos-\\Restaurante\\Form3.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Restaurante\\Form3.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-30T20:47:25.471Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Form1.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\David\\source\\repos\\Proyecto-Sistema-de-Gesti-n-y-An-lisis-de-Datos-\\Restaurante\\Form1.cs",
-              "RelativeDocumentMoniker": "Restaurante\\Form1.cs",
-              "ToolTip": "C:\\Users\\David\\source\\repos\\Proyecto-Sistema-de-Gesti-n-y-An-lisis-de-Datos-\\Restaurante\\Form1.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Restaurante\\Form1.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-30T18:45:50.128Z",
+              "WhenOpened": "2026-10-31T20:24:10.508Z",
               "EditorCaption": " [Dise\u00F1o]"
             }
           ]
         },
         {
-          "DockedWidth": 80,
+          "DockedHeight": 189,
           "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
             }
           ]
         }
