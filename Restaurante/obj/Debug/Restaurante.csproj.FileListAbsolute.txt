@@ -9,3 +9,12 @@ C:\Users\David\source\repos\Proyecto-Sistema-de-Gesti-n-y-An-lisis-de-Datos-\Res
 C:\Users\David\source\repos\Proyecto-Sistema-de-Gesti-n-y-An-lisis-de-Datos-\Restaurante\obj\Debug\Restaurante.exe
 C:\Users\David\source\repos\Proyecto-Sistema-de-Gesti-n-y-An-lisis-de-Datos-\Restaurante\obj\Debug\Restaurante.pdb
 C:\Users\David\source\repos\Proyecto-Sistema-de-Gesti-n-y-An-lisis-de-Datos-\Restaurante\obj\Debug\Restaurante.Frm4.resources
+C:\Users\karen\source\repos\Proyecto-Sistema-de-Gesti-n-y-An-lisis-de-Datos-\Restaurante\obj\Debug\Restaurante.csproj.AssemblyReference.cache
+C:\Users\karen\source\repos\Proyecto-Sistema-de-Gesti-n-y-An-lisis-de-Datos-\Restaurante\obj\Debug\Restaurante.nudCantidad.resources
+C:\Users\karen\source\repos\Proyecto-Sistema-de-Gesti-n-y-An-lisis-de-Datos-\Restaurante\obj\Debug\Restaurante.Frm4.resources
+C:\Users\karen\source\repos\Proyecto-Sistema-de-Gesti-n-y-An-lisis-de-Datos-\Restaurante\obj\Debug\Restaurante.InicioSesion.resources
+C:\Users\karen\source\repos\Proyecto-Sistema-de-Gesti-n-y-An-lisis-de-Datos-\Restaurante\obj\Debug\Restaurante.Properties.Resources.resources
+C:\Users\karen\source\repos\Proyecto-Sistema-de-Gesti-n-y-An-lisis-de-Datos-\Restaurante\obj\Debug\Restaurante.csproj.GenerateResource.cache
+C:\Users\karen\source\repos\Proyecto-Sistema-de-Gesti-n-y-An-lisis-de-Datos-\Restaurante\obj\Debug\Restaurante.csproj.CoreCompileInputs.cache
+C:\Users\karen\source\repos\Proyecto-Sistema-de-Gesti-n-y-An-lisis-de-Datos-\Restaurante\obj\Debug\Restaurante.exe
+C:\Users\karen\source\repos\Proyecto-Sistema-de-Gesti-n-y-An-lisis-de-Datos-\Restaurante\obj\Debug\Restaurante.pdb
