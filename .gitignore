@@ -1,0 +1,12 @@
+﻿# Archivos temporales de Visual Studio
+.vs/
+
+# Archivos generados al compilar
+bin/
+obj/
+
+# Archivos temporales
+*.user
+*.suo
+*.cache
+obj/

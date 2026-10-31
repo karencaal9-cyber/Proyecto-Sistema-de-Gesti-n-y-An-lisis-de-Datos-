@@ -1,0 +1,3 @@
+﻿SELECT *
+FROM Mesas
+WHERE IdMesa = 2;
