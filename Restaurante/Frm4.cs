@@ -155,7 +155,7 @@ namespace Restaurante
                     MessageBox.Show("¡Reserva y cliente registrados exitosamente!", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                     // Abrir Frm4 enviando el ID de la reserva generada
-                    Frm4 formMenu = new Frm4();
+                    nudCantidad formMenu = new nudCantidad(idReservaGenerada);
                     this.Hide();
                     formMenu.ShowDialog();
                     this.Close();
