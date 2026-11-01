@@ -129,5 +129,20 @@ namespace Restaurante
         {
             // Evento predeterminado
         }
+
+        private void btnAgregar_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnImprimirPDF_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnVolver_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
