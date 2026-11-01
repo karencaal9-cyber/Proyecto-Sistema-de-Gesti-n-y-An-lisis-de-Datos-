@@ -145,7 +145,7 @@
             // 
             this.lblRolEmpleado.AutoSize = true;
             this.lblRolEmpleado.Font = new System.Drawing.Font("Segoe UI Semibold", 12.096F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRolEmpleado.Location = new System.Drawing.Point(301, 279);
+            this.lblRolEmpleado.Location = new System.Drawing.Point(300, 279);
             this.lblRolEmpleado.Name = "lblRolEmpleado";
             this.lblRolEmpleado.Size = new System.Drawing.Size(284, 30);
             this.lblRolEmpleado.TabIndex = 10;
