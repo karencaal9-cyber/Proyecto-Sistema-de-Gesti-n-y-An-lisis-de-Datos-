@@ -1,16 +1,16 @@
 ﻿namespace Restaurante
 {
-    partial class nudCantidad
+    partial class Form1
     {
         /// <summary>
-        /// Variable del diseñador necesaria.
+        /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        /// Limpiar los recursos que se estén usando.
+        /// Clean up any resources being used.
         /// </summary>
-        /// <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -20,190 +20,146 @@
             base.Dispose(disposing);
         }
 
-        #region Código generado por el Diseñador de Windows Forms
+        #region Windows Form Designer generated code
 
         /// <summary>
-        /// Método necesario para admitir el Diseñador. No se puede modificar
-        /// el contenido de este método con el editor de código.
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblInfoReserva = new System.Windows.Forms.Label();
-            this.gvMenu = new System.Windows.Forms.GroupBox();
-            this.lblPlatillo = new System.Windows.Forms.Label();
-            this.cmbMenu = new System.Windows.Forms.ComboBox();
-            this.lblCantidadDetalle = new System.Windows.Forms.Label();
-            this.nudcantidadd = new System.Windows.Forms.NumericUpDown();
-            this.lblObservaciones = new System.Windows.Forms.Label();
-            this.txtObservaciones = new System.Windows.Forms.TextBox();
-            this.btnAgregar = new System.Windows.Forms.Button();
-            this.dgvDetalle = new System.Windows.Forms.DataGridView();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.btnEliminarItem = new System.Windows.Forms.Button();
-            this.btnImprimirPDF = new System.Windows.Forms.Button();
-            this.btnVolver = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.nudcantidadd)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvDetalle)).BeginInit();
+            this.lblInicioSesion = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtUsuario = new System.Windows.Forms.TextBox();
+            this.txtContrasena = new System.Windows.Forms.TextBox();
+            this.cmbRol = new System.Windows.Forms.ComboBox();
+            this.cmbTurno = new System.Windows.Forms.ComboBox();
+            this.btnIniciarSesion = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // lblInfoReserva
+            // lblInicioSesion
             // 
-            this.lblInfoReserva.AutoSize = true;
-            this.lblInfoReserva.Location = new System.Drawing.Point(65, 43);
-            this.lblInfoReserva.Name = "lblInfoReserva";
-            this.lblInfoReserva.Size = new System.Drawing.Size(284, 25);
-            this.lblInfoReserva.TabIndex = 0;
-            this.lblInfoReserva.Text = "ID de Reserva Activa";
+            this.lblInicioSesion.AutoSize = true;
+            this.lblInicioSesion.Font = new System.Drawing.Font("Segoe UI Black", 24.192F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblInicioSesion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(93)))), ((int)(((byte)(122)))));
+            this.lblInicioSesion.Location = new System.Drawing.Point(133, 35);
+            this.lblInicioSesion.Name = "lblInicioSesion";
+            this.lblInicioSesion.Size = new System.Drawing.Size(393, 57);
+            this.lblInicioSesion.TabIndex = 0;
+            this.lblInicioSesion.Text = "INICIO DE SESIÓN";
             // 
-            // gvMenu
+            // label2
             // 
-            this.gvMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.gvMenu.Location = new System.Drawing.Point(70, 86);
-            this.gvMenu.Name = "gvMenu";
-            this.gvMenu.Size = new System.Drawing.Size(878, 100);
-            this.gvMenu.TabIndex = 1;
-            this.gvMenu.TabStop = false;
-            this.gvMenu.Text = "Seleccion de Alimentos del Menu:";
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 9.792F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(163, 150);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(72, 23);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Usuario:";
             // 
-            // lblPlatillo
+            // label3
             // 
-            this.lblPlatillo.AutoSize = true;
-            this.lblPlatillo.Location = new System.Drawing.Point(124, 215);
-            this.lblPlatillo.Name = "lblPlatillo";
-            this.lblPlatillo.Size = new System.Drawing.Size(281, 25);
-            this.lblPlatillo.TabIndex = 2;
-            this.lblPlatillo.Text = "Seleccione Platillo:";
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.792F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(163, 219);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(101, 23);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Contraseña:";
             // 
-            // cmbMenu
+            // label4
             // 
-            this.cmbMenu.FormattingEnabled = true;
-            this.cmbMenu.Location = new System.Drawing.Point(439, 212);
-            this.cmbMenu.Name = "cmbMenu";
-            this.cmbMenu.Size = new System.Drawing.Size(493, 33);
-            this.cmbMenu.TabIndex = 3;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 9.792F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(163, 283);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(39, 23);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "Rol:";
             // 
-            // lblCantidadDetalle
+            // label5
             // 
-            this.lblCantidadDetalle.AutoSize = true;
-            this.lblCantidadDetalle.Location = new System.Drawing.Point(266, 278);
-            this.lblCantidadDetalle.Name = "lblCantidadDetalle";
-            this.lblCantidadDetalle.Size = new System.Drawing.Size(139, 25);
-            this.lblCantidadDetalle.TabIndex = 4;
-            this.lblCantidadDetalle.Text = "Cantidad:";
-            this.lblCantidadDetalle.Click += new System.EventHandler(this.lblCantidadDetalle_Click);
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 9.792F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(163, 344);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(58, 23);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "Turno:";
             // 
-            // nudcantidadd
+            // txtUsuario
             // 
-            this.nudcantidadd.Location = new System.Drawing.Point(439, 276);
-            this.nudcantidadd.Maximum = new decimal(new int[] {
-            20,
-            0,
-            0,
-            0});
-            this.nudcantidadd.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.nudcantidadd.Name = "nudcantidadd";
-            this.nudcantidadd.Size = new System.Drawing.Size(493, 33);
-            this.nudcantidadd.TabIndex = 5;
-            this.nudcantidadd.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
+            this.txtUsuario.Location = new System.Drawing.Point(270, 152);
+            this.txtUsuario.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtUsuario.Name = "txtUsuario";
+            this.txtUsuario.Size = new System.Drawing.Size(234, 30);
+            this.txtUsuario.TabIndex = 5;
             // 
-            // lblObservaciones
+            // txtContrasena
             // 
-            this.lblObservaciones.AutoSize = true;
-            this.lblObservaciones.Location = new System.Drawing.Point(12, 331);
-            this.lblObservaciones.Name = "lblObservaciones";
-            this.lblObservaciones.Size = new System.Drawing.Size(393, 25);
-            this.lblObservaciones.TabIndex = 6;
-            this.lblObservaciones.Text = "Observaciones (Sin Cebolla):";
+            this.txtContrasena.Location = new System.Drawing.Point(270, 217);
+            this.txtContrasena.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtContrasena.Name = "txtContrasena";
+            this.txtContrasena.Size = new System.Drawing.Size(234, 30);
+            this.txtContrasena.TabIndex = 6;
+            this.txtContrasena.UseSystemPasswordChar = true;
             // 
-            // txtObservaciones
+            // cmbRol
             // 
-            this.txtObservaciones.Location = new System.Drawing.Point(439, 331);
-            this.txtObservaciones.Name = "txtObservaciones";
-            this.txtObservaciones.Size = new System.Drawing.Size(493, 33);
-            this.txtObservaciones.TabIndex = 7;
+            this.cmbRol.FormattingEnabled = true;
+            this.cmbRol.Location = new System.Drawing.Point(269, 277);
+            this.cmbRol.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.cmbRol.Name = "cmbRol";
+            this.cmbRol.Size = new System.Drawing.Size(236, 31);
+            this.cmbRol.TabIndex = 7;
             // 
-            // btnAgregar
+            // cmbTurno
             // 
-            this.btnAgregar.Location = new System.Drawing.Point(88, 394);
-            this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(329, 49);
-            this.btnAgregar.TabIndex = 8;
-            this.btnAgregar.Text = "Agregar al Detalle";
-            this.btnAgregar.UseVisualStyleBackColor = true;
+            this.cmbTurno.Enabled = false;
+            this.cmbTurno.FormattingEnabled = true;
+            this.cmbTurno.Location = new System.Drawing.Point(269, 339);
+            this.cmbTurno.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.cmbTurno.Name = "cmbTurno";
+            this.cmbTurno.Size = new System.Drawing.Size(236, 31);
+            this.cmbTurno.TabIndex = 8;
             // 
-            // dgvDetalle
+            // btnIniciarSesion
             // 
-            this.dgvDetalle.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.dgvDetalle.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDetalle.Location = new System.Drawing.Point(439, 394);
-            this.dgvDetalle.Name = "dgvDetalle";
-            this.dgvDetalle.RowHeadersWidth = 51;
-            this.dgvDetalle.RowTemplate.Height = 24;
-            this.dgvDetalle.Size = new System.Drawing.Size(493, 150);
-            this.dgvDetalle.TabIndex = 9;
+            this.btnIniciarSesion.Font = new System.Drawing.Font("Segoe UI", 12.096F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIniciarSesion.Location = new System.Drawing.Point(203, 415);
+            this.btnIniciarSesion.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnIniciarSesion.Name = "btnIniciarSesion";
+            this.btnIniciarSesion.Size = new System.Drawing.Size(199, 81);
+            this.btnIniciarSesion.TabIndex = 9;
+            this.btnIniciarSesion.Text = "Iniciar Sesion";
+            this.btnIniciarSesion.UseVisualStyleBackColor = true;
+            this.btnIniciarSesion.Click += new System.EventHandler(this.btnIniciarSesion_Click);
             // 
-            // btnEliminarItem
+            // Form1
             // 
-            this.btnEliminarItem.Location = new System.Drawing.Point(88, 574);
-            this.btnEliminarItem.Name = "btnEliminarItem";
-            this.btnEliminarItem.Size = new System.Drawing.Size(280, 71);
-            this.btnEliminarItem.TabIndex = 10;
-            this.btnEliminarItem.Text = "Quitar Platillo Seleccionado";
-            this.btnEliminarItem.UseVisualStyleBackColor = true;
-            this.btnEliminarItem.Click += new System.EventHandler(this.btnEliminarItem_Click);
-            // 
-            // btnImprimirPDF
-            // 
-            this.btnImprimirPDF.Location = new System.Drawing.Point(404, 574);
-            this.btnImprimirPDF.Name = "btnImprimirPDF";
-            this.btnImprimirPDF.Size = new System.Drawing.Size(322, 71);
-            this.btnImprimirPDF.TabIndex = 11;
-            this.btnImprimirPDF.Text = "Imprimir Comprobante PDF (RF11)";
-            this.btnImprimirPDF.UseVisualStyleBackColor = true;
-            // 
-            // btnVolver
-            // 
-            this.btnVolver.Location = new System.Drawing.Point(751, 574);
-            this.btnVolver.Name = "btnVolver";
-            this.btnVolver.Size = new System.Drawing.Size(246, 71);
-            this.btnVolver.TabIndex = 12;
-            this.btnVolver.Text = "Volver-Finalizar";
-            this.btnVolver.UseVisualStyleBackColor = true;
-            // 
-            // nudCantidad
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(17F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(1077, 674);
-            this.Controls.Add(this.btnVolver);
-            this.Controls.Add(this.btnImprimirPDF);
-            this.Controls.Add(this.btnEliminarItem);
-            this.Controls.Add(this.dgvDetalle);
-            this.Controls.Add(this.btnAgregar);
-            this.Controls.Add(this.txtObservaciones);
-            this.Controls.Add(this.lblObservaciones);
-            this.Controls.Add(this.nudcantidadd);
-            this.Controls.Add(this.lblCantidadDetalle);
-            this.Controls.Add(this.cmbMenu);
-            this.Controls.Add(this.lblPlatillo);
-            this.Controls.Add(this.gvMenu);
-            this.Controls.Add(this.lblInfoReserva);
-            this.Font = new System.Drawing.Font("Copperplate Gothic Bold", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
-            this.Name = "nudCantidad";
-            this.Text = "Form1";
-            this.Load += new System.EventHandler(this.nudCantidad_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.nudcantidadd)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvDetalle)).EndInit();
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(221)))), ((int)(((byte)(232)))));
+            this.ClientSize = new System.Drawing.Size(675, 545);
+            this.Controls.Add(this.btnIniciarSesion);
+            this.Controls.Add(this.cmbTurno);
+            this.Controls.Add(this.cmbRol);
+            this.Controls.Add(this.txtContrasena);
+            this.Controls.Add(this.txtUsuario);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lblInicioSesion);
+            this.Font = new System.Drawing.Font("Segoe UI", 9.792F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Name = "Form1";
+            this.Text = "Inicio de Sesión - Sistema de Reservas";
+            this.Load += new System.EventHandler(this.InicioSesion_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -211,20 +167,15 @@
 
         #endregion
 
-        private System.Windows.Forms.Label lblInfoReserva;
-        private System.Windows.Forms.GroupBox gvMenu;
-        private System.Windows.Forms.Label lblPlatillo;
-        private System.Windows.Forms.ComboBox cmbMenu;
-        private System.Windows.Forms.Label lblCantidadDetalle;
-        private System.Windows.Forms.NumericUpDown nudcantidadd;
-        private System.Windows.Forms.Label lblObservaciones;
-        private System.Windows.Forms.TextBox txtObservaciones;
-        private System.Windows.Forms.Button btnAgregar;
-        private System.Windows.Forms.DataGridView dgvDetalle;
-        private System.ComponentModel.BackgroundWorker backgroundWorker1;
-        private System.Windows.Forms.Button btnEliminarItem;
-        private System.Windows.Forms.Button btnImprimirPDF;
-        private System.Windows.Forms.Button btnVolver;
+        private System.Windows.Forms.Label lblInicioSesion;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txtUsuario;
+        private System.Windows.Forms.TextBox txtContrasena;
+        private System.Windows.Forms.ComboBox cmbRol;
+        private System.Windows.Forms.ComboBox cmbTurno;
+        private System.Windows.Forms.Button btnIniciarSesion;
     }
 }
-

@@ -2,132 +2,138 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Restaurante.Data;
 
 namespace Restaurante
 {
-    public partial class nudCantidad : Form
+    public partial class Form1 : Form
     {
-        private int idReservaRecibido;
-        private DataTable dtMenu = new DataTable();
-        private DataTable dtDetalle = new DataTable();
-
-        // Constructor principal que recibe el ID de la reserva
-        public nudCantidad(int idReserva)
+        public Form1()
         {
             InitializeComponent();
-            idReservaRecibido = idReserva;
-            lblInfoReserva.Text = "ID de Reserva Activa: " + idReservaRecibido.ToString();
         }
 
-        // Constructor vacío por si Visual Studio abre el diseñador visual
-        public nudCantidad()
+        private void InicioSesion_Load(object sender, EventArgs e)
         {
-            InitializeComponent();
-            idReservaRecibido = 1;
-            lblInfoReserva.Text = "ID de Reserva Activa: [---]";
+            cmbRol.Items.Add("Administrador");
+            cmbRol.Items.Add("Mesero");
+            cmbRol.Items.Add("Recepcionista");
+            cmbRol.SelectedIndex = 0;
+
         }
 
-        private void nudCantidad_Load(object sender, EventArgs e)
+        private void btnIniciarSesion_Click(object sender, EventArgs e)
         {
-            InicializarMenuEnMemoria();
-            InicializarDetalleEnMemoria();
-        }
+            string usuario = txtUsuario.Text.Trim();
+            string contrasena = txtContrasena.Text.Trim();
 
-        // Crear un menú simulado en memoria (sin base de datos)
-        private void InicializarMenuEnMemoria()
-        {
-            dtMenu.Columns.Add("IdMenu", typeof(int));
-            dtMenu.Columns.Add("NombrePlatillo", typeof(string));
-            dtMenu.Columns.Add("Precio", typeof(decimal));
-
-            // Platillos de ejemplo para que aparezcan en tu ComboBox
-            dtMenu.Rows.Add(1, "Hamburguesa Especial", 45.00m);
-            dtMenu.Rows.Add(2, "Pizza Familiar", 120.00m);
-            dtMenu.Rows.Add(3, "Papas Fritas", 25.00m);
-            dtMenu.Rows.Add(4, "Refresco Natural", 15.00m);
-            dtMenu.Rows.Add(5, "Postre de Brownie", 30.00m);
-
-            cmbMenu.DataSource = dtMenu;
-            cmbMenu.DisplayMember = "NombrePlatillo";
-            cmbMenu.ValueMember = "IdMenu";
-        }
-
-        // Crear la estructura de la tabla de detalles en memoria para el DataGridView
-        private void InicializarDetalleEnMemoria()
-        {
-            dtDetalle.Columns.Add("IdDetalle", typeof(int));
-            dtDetalle.Columns.Add("NombrePlatillo", typeof(string));
-            dtDetalle.Columns.Add("Cantidad", typeof(int));
-            dtDetalle.Columns.Add("Precio", typeof(decimal));
-            dtDetalle.Columns.Add("Subtotal", typeof(decimal), "Cantidad * Precio"); // Calcula automáticamente
-            dtDetalle.Columns.Add("Observaciones", typeof(string));
-
-            dgvDetalle.DataSource = dtDetalle;
-        }
-
-        // Botón para agregar un platillo al detalle de la reserva
-        private void btnAgregar_Click(object sender, EventArgs e)
-        {
-            if (cmbMenu.SelectedItem == null) return;
-
-            DataRowView rowView = (DataRowView)cmbMenu.SelectedItem;
-            string nombrePlatillo = rowView["NombrePlatillo"].ToString();
-            decimal precio = Convert.ToDecimal(rowView["Precio"]);
-            int cantidad = (int)nudcantidadd.Value; // Usando tu control nudcantidadd
-            string observaciones = txtObservaciones.Text.Trim();
-
-            int idDetalleTemp = dtDetalle.Rows.Count + 1;
-
-            // Agrega el platillo a la tabla visual en memoria
-            dtDetalle.Rows.Add(idDetalleTemp, nombrePlatillo, cantidad, precio, 0, observaciones);
-
-            MessageBox.Show("Platillo agregado al detalle correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            txtObservaciones.Clear();
-            nudcantidadd.Value = 1;
-        }
-
-        // Botón para quitar un platillo del detalle seleccionado en la tabla
-        private void btnEliminarItem_Click(object sender, EventArgs e)
-        {
-            if (dgvDetalle.SelectedRows.Count > 0)
+            if (string.IsNullOrEmpty(usuario) || string.IsNullOrEmpty(contrasena))
             {
-                int index = dgvDetalle.SelectedRows[0].Index;
-                if (!dgvDetalle.Rows[index].IsNewRow)
+                MessageBox.Show("Por favor, ingrese el usuario y la contraseña.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            string query = @"SELECT E.IdEmpleado, E.NombreEmpleado, E.ApellidoEmpleado, E.RolEmpleado, T.IdTurno, T.InicioTurno, T.FinalizacionTurno 
+                             FROM Empleados E
+                             LEFT JOIN Turnos T ON E.IdEmpleado = T.IdEmpleado AND GETDATE() BETWEEN T.InicioTurno AND T.FinalizacionTurno 
+                             WHERE E.UsuarioEmpleado = @usuario AND E.ContrasenaEmpleado = @contrasena";
+
+            using (SqlConnection conexion = ConexionBD.ObtenerConexion())
+            {
+                try
                 {
-                    dtDetalle.Rows.RemoveAt(index);
-                    MessageBox.Show("Platillo eliminado del detalle.", "Eliminado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    conexion.Open();
+                    using (SqlCommand comando = new SqlCommand(query, conexion))
+                    {
+                        comando.Parameters.AddWithValue("@usuario", usuario);
+                        comando.Parameters.AddWithValue("@contrasena", contrasena);
+
+                        using (SqlDataReader lector = comando.ExecuteReader())
+                        {
+                            if (lector.Read())
+                            {
+                                int idEmpleado = lector.GetInt32(0);
+                                string nombre = lector.GetString(1) + " " + lector.GetString(2);
+                                string rol = lector.GetString(3);
+                                SesionActual.IdEmpleado = idEmpleado;
+
+                                cmbRol.Text = rol;
+
+                                cmbTurno.Items.Clear();
+                                if (!lector.IsDBNull(4))
+                                {
+                                    DateTime inicioTurno = lector.GetDateTime(5);
+                                    DateTime finTurno = lector.GetDateTime(6);
+
+                                    string turnoTexto = $"{inicioTurno:HH:mm} - {finTurno:HH:mm}";
+
+                                    cmbTurno.Items.Add(turnoTexto);
+                                    cmbTurno.SelectedIndex = 0;
+                                }
+                                else
+                                {
+                                    cmbTurno.Items.Add("Sin turno activo");
+                                    cmbTurno.SelectedIndex = 0;
+                                }
+
+                            }
+                            else
+                            {
+                                MessageBox.Show("Usuario o contraseña incorrectos.", "Error de Autenticación", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                txtContrasena.Clear();
+                                txtUsuario.Focus();
+
+                                cmbRol.SelectedIndex = -1;
+                                cmbTurno.Items.Clear();
+                                return;
+                            }
+                        }
+                    }
+
+                    string queryId = "SELECT IdEmpleado, NombreEmpleado, ApellidoEmpleado FROM Empleados WHERE UsuarioEmpleado = @usuario";
+                    int idEmpLogueado = 0;
+                    string nombreCompleto = "";
+
+                    using (SqlCommand cmdInfo = new SqlCommand(queryId, conexion))
+                    {
+                        cmdInfo.Parameters.AddWithValue("@usuario", usuario);
+                        using (SqlDataReader l2 = cmdInfo.ExecuteReader())
+                        {
+                            if (l2.Read())
+                            {
+                                idEmpLogueado = l2.GetInt32(0);
+                                nombreCompleto = l2.GetString(1) + " " + l2.GetString(2);
+                            }
+                        }
+                    }
+
+                    string queryBitacora = @"INSERT INTO Bitacora (IdEmpleado, TipoOperacion, FechaOperacion, HoraOperacion, TablaAfectada, DescripcionBitacora) 
+                                             VALUES (@idEmp, 'LOGIN', GETDATE(), CAST(GETDATE() AS TIME), 'Empleados', @desc)";
+
+                    using (SqlCommand cmdBitacora = new SqlCommand(queryBitacora, conexion))
+                    {
+                        cmdBitacora.Parameters.AddWithValue("@idEmp", idEmpLogueado);
+                        cmdBitacora.Parameters.AddWithValue("@desc", $"El empleado {nombreCompleto} inició sesión en el sistema.");
+                        cmdBitacora.ExecuteNonQuery();
+                    }
+
+                    MessageBox.Show($"¡Bienvenido al sistema, {nombreCompleto}!", "Inicio de Sesión Exitoso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    Form2 menuPrincipal = new Form2();
+                    menuPrincipal.Show();
+                    this.Hide();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error de conexión: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
-            else
-            {
-                MessageBox.Show("Seleccione un registro del detalle para eliminar.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
-        }
-
-        // Requerimiento RF11: Imprimir comprobante de reserva con código de confirmación en PDF
-        private void btnImprimirPDF_Click(object sender, EventArgs e)
-        {
-            string codigoConfirmacion = "RES-" + idReservaRecibido.ToString("D5") + "-" + DateTime.Now.Year.ToString();
-
-            MessageBox.Show($"¡Comprobante generado con éxito!\n\n" +
-                            $"Código de Confirmación: {codigoConfirmacion}\n" +
-                            $"El archivo PDF de la reserva #{idReservaRecibido} se ha generado correctamente.",
-                            "RF11 - PDF Generado", MessageBoxButtons.OK, MessageBoxIcon.Information);
-        }
-
-        private void btnVolver_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void lblCantidadDetalle_Click(object sender, EventArgs e)
-        {
-            // Evento predeterminado
         }
     }
 }

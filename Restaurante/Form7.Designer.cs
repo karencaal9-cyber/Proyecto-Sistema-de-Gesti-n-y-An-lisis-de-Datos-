@@ -44,7 +44,6 @@
             this.btnClientesExcel = new System.Windows.Forms.Button();
             this.lblGraficaComparativa = new System.Windows.Forms.Label();
             this.btnReportePDF = new System.Windows.Forms.Button();
-            this.btnSalir = new System.Windows.Forms.Button();
             this.dgvBitacora = new System.Windows.Forms.DataGridView();
             this.btnRegresarMenu = new System.Windows.Forms.Button();
             this.pnlBitacora = new System.Windows.Forms.Panel();
@@ -67,7 +66,7 @@
             this.lblForm7.AutoSize = true;
             this.lblForm7.Font = new System.Drawing.Font("Segoe UI Black", 24.192F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblForm7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(93)))), ((int)(((byte)(122)))));
-            this.lblForm7.Location = new System.Drawing.Point(343, 74);
+            this.lblForm7.Location = new System.Drawing.Point(358, 9);
             this.lblForm7.Name = "lblForm7";
             this.lblForm7.Size = new System.Drawing.Size(568, 57);
             this.lblForm7.TabIndex = 0;
@@ -77,7 +76,7 @@
             // 
             this.lblMesasDisponibles.AutoSize = true;
             this.lblMesasDisponibles.Font = new System.Drawing.Font("Segoe UI Semibold", 10.944F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMesasDisponibles.Location = new System.Drawing.Point(17, 46);
+            this.lblMesasDisponibles.Location = new System.Drawing.Point(17, 35);
             this.lblMesasDisponibles.Name = "lblMesasDisponibles";
             this.lblMesasDisponibles.Size = new System.Drawing.Size(218, 25);
             this.lblMesasDisponibles.TabIndex = 1;
@@ -87,7 +86,7 @@
             // 
             this.lblGraficaBarras.AutoSize = true;
             this.lblGraficaBarras.Font = new System.Drawing.Font("Segoe UI Semibold", 8.064F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGraficaBarras.Location = new System.Drawing.Point(22, 52);
+            this.lblGraficaBarras.Location = new System.Drawing.Point(22, 34);
             this.lblGraficaBarras.Name = "lblGraficaBarras";
             this.lblGraficaBarras.Size = new System.Drawing.Size(281, 19);
             this.lblGraficaBarras.TabIndex = 3;
@@ -96,7 +95,7 @@
             // tmpMesasDisponibles
             // 
             this.tmpMesasDisponibles.CalendarFont = new System.Drawing.Font("Segoe UI Semibold", 9.792F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tmpMesasDisponibles.Location = new System.Drawing.Point(241, 42);
+            this.tmpMesasDisponibles.Location = new System.Drawing.Point(241, 31);
             this.tmpMesasDisponibles.Name = "tmpMesasDisponibles";
             this.tmpMesasDisponibles.Size = new System.Drawing.Size(331, 30);
             this.tmpMesasDisponibles.TabIndex = 4;
@@ -105,7 +104,7 @@
             // dgvMesasDisponibles
             // 
             this.dgvMesasDisponibles.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvMesasDisponibles.Location = new System.Drawing.Point(19, 98);
+            this.dgvMesasDisponibles.Location = new System.Drawing.Point(19, 78);
             this.dgvMesasDisponibles.Name = "dgvMesasDisponibles";
             this.dgvMesasDisponibles.RowHeadersWidth = 53;
             this.dgvMesasDisponibles.RowTemplate.Height = 24;
@@ -119,7 +118,7 @@
             this.ctGraficaComparativa.ChartAreas.Add(chartArea3);
             legend3.Name = "Legend1";
             this.ctGraficaComparativa.Legends.Add(legend3);
-            this.ctGraficaComparativa.Location = new System.Drawing.Point(356, 79);
+            this.ctGraficaComparativa.Location = new System.Drawing.Point(356, 61);
             this.ctGraficaComparativa.Name = "ctGraficaComparativa";
             series3.ChartArea = "ChartArea1";
             series3.Legend = "Legend1";
@@ -136,7 +135,7 @@
             this.ctGraficaBarras.ChartAreas.Add(chartArea4);
             legend4.Name = "Legend1";
             this.ctGraficaBarras.Legends.Add(legend4);
-            this.ctGraficaBarras.Location = new System.Drawing.Point(41, 79);
+            this.ctGraficaBarras.Location = new System.Drawing.Point(41, 61);
             this.ctGraficaBarras.Name = "ctGraficaBarras";
             series4.ChartArea = "ChartArea1";
             series4.Legend = "Legend1";
@@ -152,7 +151,7 @@
             this.btnClientesExcel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClientesExcel.Font = new System.Drawing.Font("Segoe UI", 12.096F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClientesExcel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(65)))), ((int)(((byte)(74)))));
-            this.btnClientesExcel.Location = new System.Drawing.Point(369, 382);
+            this.btnClientesExcel.Location = new System.Drawing.Point(380, 340);
             this.btnClientesExcel.Name = "btnClientesExcel";
             this.btnClientesExcel.Size = new System.Drawing.Size(208, 100);
             this.btnClientesExcel.TabIndex = 15;
@@ -164,7 +163,7 @@
             // 
             this.lblGraficaComparativa.AutoSize = true;
             this.lblGraficaComparativa.Font = new System.Drawing.Font("Segoe UI Semibold", 8.064F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGraficaComparativa.Location = new System.Drawing.Point(365, 52);
+            this.lblGraficaComparativa.Location = new System.Drawing.Point(365, 34);
             this.lblGraficaComparativa.Name = "lblGraficaComparativa";
             this.lblGraficaComparativa.Size = new System.Drawing.Size(220, 19);
             this.lblGraficaComparativa.TabIndex = 9;
@@ -176,7 +175,7 @@
             this.btnReportePDF.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReportePDF.Font = new System.Drawing.Font("Segoe UI", 12.096F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReportePDF.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(65)))), ((int)(((byte)(74)))));
-            this.btnReportePDF.Location = new System.Drawing.Point(12, 382);
+            this.btnReportePDF.Location = new System.Drawing.Point(23, 340);
             this.btnReportePDF.Name = "btnReportePDF";
             this.btnReportePDF.Size = new System.Drawing.Size(306, 100);
             this.btnReportePDF.TabIndex = 12;
@@ -184,27 +183,15 @@
             this.btnReportePDF.UseVisualStyleBackColor = false;
             this.btnReportePDF.Click += new System.EventHandler(this.btnReportePDF_Click);
             // 
-            // btnSalir
-            // 
-            this.btnSalir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(125)))), ((int)(((byte)(145)))));
-            this.btnSalir.Font = new System.Drawing.Font("Segoe UI Black", 12.096F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalir.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(65)))), ((int)(((byte)(74)))));
-            this.btnSalir.Location = new System.Drawing.Point(977, 25);
-            this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(230, 66);
-            this.btnSalir.TabIndex = 11;
-            this.btnSalir.Text = "Salir";
-            this.btnSalir.UseVisualStyleBackColor = false;
-            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
-            // 
             // dgvBitacora
             // 
+            this.dgvBitacora.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvBitacora.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvBitacora.Location = new System.Drawing.Point(29, 37);
             this.dgvBitacora.Name = "dgvBitacora";
             this.dgvBitacora.RowHeadersWidth = 53;
             this.dgvBitacora.RowTemplate.Height = 24;
-            this.dgvBitacora.Size = new System.Drawing.Size(986, 199);
+            this.dgvBitacora.Size = new System.Drawing.Size(439, 128);
             this.dgvBitacora.TabIndex = 0;
             // 
             // btnRegresarMenu
@@ -213,7 +200,7 @@
             this.btnRegresarMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegresarMenu.Font = new System.Drawing.Font("Segoe UI", 12.096F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegresarMenu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(65)))), ((int)(((byte)(74)))));
-            this.btnRegresarMenu.Location = new System.Drawing.Point(16, 25);
+            this.btnRegresarMenu.Location = new System.Drawing.Point(9, 9);
             this.btnRegresarMenu.Name = "btnRegresarMenu";
             this.btnRegresarMenu.Size = new System.Drawing.Size(218, 54);
             this.btnRegresarMenu.TabIndex = 14;
@@ -226,9 +213,9 @@
             this.pnlBitacora.BackColor = System.Drawing.Color.WhiteSmoke;
             this.pnlBitacora.Controls.Add(this.lblBitacora);
             this.pnlBitacora.Controls.Add(this.dgvBitacora);
-            this.pnlBitacora.Location = new System.Drawing.Point(76, 674);
+            this.pnlBitacora.Location = new System.Drawing.Point(369, 574);
             this.pnlBitacora.Name = "pnlBitacora";
-            this.pnlBitacora.Size = new System.Drawing.Size(1049, 252);
+            this.pnlBitacora.Size = new System.Drawing.Size(505, 181);
             this.pnlBitacora.TabIndex = 6;
             // 
             // lblBitacora
@@ -251,9 +238,9 @@
             this.pnlGraficayReportes.Controls.Add(this.btnReportePDF);
             this.pnlGraficayReportes.Controls.Add(this.btnClientesExcel);
             this.pnlGraficayReportes.Controls.Add(this.ctGraficaComparativa);
-            this.pnlGraficayReportes.Location = new System.Drawing.Point(608, 169);
+            this.pnlGraficayReportes.Location = new System.Drawing.Point(608, 86);
             this.pnlGraficayReportes.Name = "pnlGraficayReportes";
-            this.pnlGraficayReportes.Size = new System.Drawing.Size(615, 499);
+            this.pnlGraficayReportes.Size = new System.Drawing.Size(615, 482);
             this.pnlGraficayReportes.TabIndex = 15;
             this.pnlGraficayReportes.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -274,9 +261,9 @@
             this.pnlMesasReservadas.Controls.Add(this.tmpMesasDisponibles);
             this.pnlMesasReservadas.Controls.Add(this.lblMesasDisponibles);
             this.pnlMesasReservadas.Controls.Add(this.lblMesasReservadas);
-            this.pnlMesasReservadas.Location = new System.Drawing.Point(9, 170);
+            this.pnlMesasReservadas.Location = new System.Drawing.Point(9, 86);
             this.pnlMesasReservadas.Name = "pnlMesasReservadas";
-            this.pnlMesasReservadas.Size = new System.Drawing.Size(590, 498);
+            this.pnlMesasReservadas.Size = new System.Drawing.Size(590, 482);
             this.pnlMesasReservadas.TabIndex = 16;
             // 
             // lblMesasReservadas
@@ -294,17 +281,16 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(221)))), ((int)(((byte)(232)))));
-            this.ClientSize = new System.Drawing.Size(1244, 938);
+            this.ClientSize = new System.Drawing.Size(1244, 777);
             this.Controls.Add(this.pnlMesasReservadas);
             this.Controls.Add(this.pnlGraficayReportes);
             this.Controls.Add(this.pnlBitacora);
             this.Controls.Add(this.btnRegresarMenu);
-            this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.lblForm7);
             this.Font = new System.Drawing.Font("Segoe UI", 9.792F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form7";
-            this.Text = "Form7";
+            this.Text = "Resultados y Reportes - Sistema de Reservas";
             this.Load += new System.EventHandler(this.Form7_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvMesasDisponibles)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ctGraficaComparativa)).EndInit();
@@ -331,7 +317,6 @@
         private System.Windows.Forms.DataVisualization.Charting.Chart ctGraficaComparativa;
         private System.Windows.Forms.DataVisualization.Charting.Chart ctGraficaBarras;
         private System.Windows.Forms.Label lblGraficaComparativa;
-        private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.Button btnReportePDF;
         private System.Windows.Forms.DataGridView dgvBitacora;
         private System.Windows.Forms.Button btnRegresarMenu;

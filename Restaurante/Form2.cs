@@ -123,5 +123,61 @@ namespace Restaurante
             Form3 formularioMesas = new Form3();
             formularioMesas.ShowDialog();
         }
-    }
+
+        private void btnClientes_Click(object sender, EventArgs e)
+        {
+            Form4 formularioClientes = new Form4();
+            formularioClientes.ShowDialog();
+        }
+
+        private void btnReservayMenu_Click(object sender, EventArgs e)
+        {
+            Form5 formularioReservayMenu = new Form5();
+            formularioReservayMenu.ShowDialog();
+        }
+
+        private void btnConsultas_Click(object sender, EventArgs e)
+        {
+            Form6 formularioConsultas = new Form6();
+            formularioConsultas.ShowDialog();
+        }
+
+        private void btnReportes_Click(object sender, EventArgs e)
+        {
+            Form7 formularioReportes = new Form7();
+            formularioReportes.ShowDialog();
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            DialogResult resultado = MessageBox.Show("¿Estás seguro de que deseas cerrar sesión?", "Cerrar Sesión", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (resultado == DialogResult.Yes)
+            {
+                try
+                {
+                    string queryBitacora = @"INSERT INTO Bitacora (IdEmpleado, TipoOperacion, FechaOperacion, HoraOperacion, TablaAfectada, DescripcionBitacora) 
+                                     VALUES (@idEmp, 'LOGOUT', GETDATE(), CAST(GETDATE() AS TIME), 'Empleados', 'El empleado cerró sesión en el sistema.')";
+
+                    using (SqlConnection conexion = ConexionBD.ObtenerConexion())
+                    {
+                        conexion.Open();
+                        using (SqlCommand cmdBitacora = new SqlCommand(queryBitacora, conexion))
+                        {
+                            cmdBitacora.Parameters.AddWithValue("@idEmp", SesionActual.IdEmpleado);
+                            cmdBitacora.ExecuteNonQuery();
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("No se pudo registrar la salida en la bitácora: " + ex.Message, "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+
+                this.Close();
+                Form1 login = new Form1();
+                login.Show();
+            }
+        }
+    } 
 }

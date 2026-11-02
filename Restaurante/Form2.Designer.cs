@@ -28,41 +28,45 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             this.pnlEncabezado = new System.Windows.Forms.Panel();
             this.lblTitulo = new System.Windows.Forms.Label();
             this.pnlReservas = new System.Windows.Forms.FlowLayoutPanel();
-            this.pnlMesas = new System.Windows.Forms.FlowLayoutPanel();
-            this.pnlClientes = new System.Windows.Forms.FlowLayoutPanel();
             this.lblTituloReservas = new System.Windows.Forms.Label();
             this.lblTotalReservas = new System.Windows.Forms.Label();
+            this.pnlMesas = new System.Windows.Forms.FlowLayoutPanel();
             this.lblTituloMesas = new System.Windows.Forms.Label();
             this.lblTotalMesas = new System.Windows.Forms.Label();
+            this.pnlClientes = new System.Windows.Forms.FlowLayoutPanel();
             this.lblTituloClientes = new System.Windows.Forms.Label();
             this.lblTotalClientes = new System.Windows.Forms.Label();
             this.pnlGraficaReservas = new System.Windows.Forms.FlowLayoutPanel();
-            this.pnlGraficaMesas = new System.Windows.Forms.FlowLayoutPanel();
             this.lblTituloGraficaReservas = new System.Windows.Forms.Label();
-            this.lblTituloGraficaMesas = new System.Windows.Forms.Label();
             this.chartReservas = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.pnlGraficaMesas = new System.Windows.Forms.FlowLayoutPanel();
+            this.lblTituloGraficaMesas = new System.Windows.Forms.Label();
             this.chartMesas = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.btnMesas = new System.Windows.Forms.Button();
             this.btnConsultas = new System.Windows.Forms.Button();
             this.btnReportes = new System.Windows.Forms.Button();
+            this.btnSalir = new System.Windows.Forms.Button();
+            this.btnClientes = new System.Windows.Forms.Button();
+            this.btnReservayMenu = new System.Windows.Forms.Button();
             this.pnlEncabezado.SuspendLayout();
             this.pnlReservas.SuspendLayout();
             this.pnlMesas.SuspendLayout();
             this.pnlClientes.SuspendLayout();
             this.pnlGraficaReservas.SuspendLayout();
-            this.pnlGraficaMesas.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartReservas)).BeginInit();
+            this.pnlGraficaMesas.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartMesas)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlEncabezado
             // 
             this.pnlEncabezado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(221)))), ((int)(((byte)(232)))));
+            this.pnlEncabezado.Controls.Add(this.btnSalir);
             this.pnlEncabezado.Controls.Add(this.lblTitulo);
             this.pnlEncabezado.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlEncabezado.Location = new System.Drawing.Point(0, 0);
@@ -72,9 +76,9 @@
             // 
             // lblTitulo
             // 
-            this.lblTitulo.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitulo.Font = new System.Drawing.Font("Segoe UI Black", 24.192F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(93)))), ((int)(((byte)(122)))));
-            this.lblTitulo.Location = new System.Drawing.Point(224, 19);
+            this.lblTitulo.Location = new System.Drawing.Point(107, 10);
             this.lblTitulo.Name = "lblTitulo";
             this.lblTitulo.Size = new System.Drawing.Size(700, 50);
             this.lblTitulo.TabIndex = 1;
@@ -90,26 +94,6 @@
             this.pnlReservas.Name = "pnlReservas";
             this.pnlReservas.Size = new System.Drawing.Size(310, 125);
             this.pnlReservas.TabIndex = 1;
-            // 
-            // pnlMesas
-            // 
-            this.pnlMesas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(221)))), ((int)(((byte)(232)))));
-            this.pnlMesas.Controls.Add(this.lblTituloMesas);
-            this.pnlMesas.Controls.Add(this.lblTotalMesas);
-            this.pnlMesas.Location = new System.Drawing.Point(392, 110);
-            this.pnlMesas.Name = "pnlMesas";
-            this.pnlMesas.Size = new System.Drawing.Size(310, 125);
-            this.pnlMesas.TabIndex = 2;
-            // 
-            // pnlClientes
-            // 
-            this.pnlClientes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(221)))), ((int)(((byte)(232)))));
-            this.pnlClientes.Controls.Add(this.lblTituloClientes);
-            this.pnlClientes.Controls.Add(this.lblTotalClientes);
-            this.pnlClientes.Location = new System.Drawing.Point(757, 110);
-            this.pnlClientes.Name = "pnlClientes";
-            this.pnlClientes.Size = new System.Drawing.Size(310, 125);
-            this.pnlClientes.TabIndex = 3;
             // 
             // lblTituloReservas
             // 
@@ -133,6 +117,16 @@
             this.lblTotalReservas.Text = "0";
             this.lblTotalReservas.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // pnlMesas
+            // 
+            this.pnlMesas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(221)))), ((int)(((byte)(232)))));
+            this.pnlMesas.Controls.Add(this.lblTituloMesas);
+            this.pnlMesas.Controls.Add(this.lblTotalMesas);
+            this.pnlMesas.Location = new System.Drawing.Point(392, 110);
+            this.pnlMesas.Name = "pnlMesas";
+            this.pnlMesas.Size = new System.Drawing.Size(310, 125);
+            this.pnlMesas.TabIndex = 2;
+            // 
             // lblTituloMesas
             // 
             this.lblTituloMesas.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -154,6 +148,16 @@
             this.lblTotalMesas.TabIndex = 6;
             this.lblTotalMesas.Text = "0";
             this.lblTotalMesas.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pnlClientes
+            // 
+            this.pnlClientes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(221)))), ((int)(((byte)(232)))));
+            this.pnlClientes.Controls.Add(this.lblTituloClientes);
+            this.pnlClientes.Controls.Add(this.lblTotalClientes);
+            this.pnlClientes.Location = new System.Drawing.Point(757, 110);
+            this.pnlClientes.Name = "pnlClientes";
+            this.pnlClientes.Size = new System.Drawing.Size(310, 125);
+            this.pnlClientes.TabIndex = 3;
             // 
             // lblTituloClientes
             // 
@@ -188,17 +192,6 @@
             this.pnlGraficaReservas.Size = new System.Drawing.Size(500, 280);
             this.pnlGraficaReservas.TabIndex = 4;
             // 
-            // pnlGraficaMesas
-            // 
-            this.pnlGraficaMesas.BackColor = System.Drawing.Color.White;
-            this.pnlGraficaMesas.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnlGraficaMesas.Controls.Add(this.lblTituloGraficaMesas);
-            this.pnlGraficaMesas.Controls.Add(this.chartMesas);
-            this.pnlGraficaMesas.Location = new System.Drawing.Point(550, 270);
-            this.pnlGraficaMesas.Name = "pnlGraficaMesas";
-            this.pnlGraficaMesas.Size = new System.Drawing.Size(500, 280);
-            this.pnlGraficaMesas.TabIndex = 5;
-            // 
             // lblTituloGraficaReservas
             // 
             this.lblTituloGraficaReservas.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -209,6 +202,27 @@
             this.lblTituloGraficaReservas.TabIndex = 6;
             this.lblTituloGraficaReservas.Text = "RESERVAS POR MES";
             this.lblTituloGraficaReservas.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // chartReservas
+            // 
+            chartArea5.Name = "ChartArea1";
+            this.chartReservas.ChartAreas.Add(chartArea5);
+            this.chartReservas.Location = new System.Drawing.Point(3, 33);
+            this.chartReservas.Name = "chartReservas";
+            this.chartReservas.Size = new System.Drawing.Size(480, 220);
+            this.chartReservas.TabIndex = 7;
+            this.chartReservas.Text = "chart1";
+            // 
+            // pnlGraficaMesas
+            // 
+            this.pnlGraficaMesas.BackColor = System.Drawing.Color.White;
+            this.pnlGraficaMesas.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlGraficaMesas.Controls.Add(this.lblTituloGraficaMesas);
+            this.pnlGraficaMesas.Controls.Add(this.chartMesas);
+            this.pnlGraficaMesas.Location = new System.Drawing.Point(550, 270);
+            this.pnlGraficaMesas.Name = "pnlGraficaMesas";
+            this.pnlGraficaMesas.Size = new System.Drawing.Size(500, 280);
+            this.pnlGraficaMesas.TabIndex = 5;
             // 
             // lblTituloGraficaMesas
             // 
@@ -221,20 +235,10 @@
             this.lblTituloGraficaMesas.Text = "MESAS POR ESTADO";
             this.lblTituloGraficaMesas.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // chartReservas
-            // 
-            chartArea3.Name = "ChartArea1";
-            this.chartReservas.ChartAreas.Add(chartArea3);
-            this.chartReservas.Location = new System.Drawing.Point(3, 33);
-            this.chartReservas.Name = "chartReservas";
-            this.chartReservas.Size = new System.Drawing.Size(480, 220);
-            this.chartReservas.TabIndex = 7;
-            this.chartReservas.Text = "chart1";
-            // 
             // chartMesas
             // 
-            chartArea4.Name = "ChartArea1";
-            this.chartMesas.ChartAreas.Add(chartArea4);
+            chartArea6.Name = "ChartArea1";
+            this.chartMesas.ChartAreas.Add(chartArea6);
             this.chartMesas.Location = new System.Drawing.Point(3, 33);
             this.chartMesas.Name = "chartMesas";
             this.chartMesas.Size = new System.Drawing.Size(480, 220);
@@ -248,9 +252,9 @@
             this.btnMesas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMesas.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMesas.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(65)))), ((int)(((byte)(74)))));
-            this.btnMesas.Location = new System.Drawing.Point(159, 573);
+            this.btnMesas.Location = new System.Drawing.Point(9, 573);
             this.btnMesas.Name = "btnMesas";
-            this.btnMesas.Size = new System.Drawing.Size(230, 45);
+            this.btnMesas.Size = new System.Drawing.Size(259, 45);
             this.btnMesas.TabIndex = 6;
             this.btnMesas.Text = "GESTIÓN DE MESAS Y ZONAS";
             this.btnMesas.UseVisualStyleBackColor = false;
@@ -263,12 +267,13 @@
             this.btnConsultas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConsultas.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConsultas.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(65)))), ((int)(((byte)(74)))));
-            this.btnConsultas.Location = new System.Drawing.Point(433, 573);
+            this.btnConsultas.Location = new System.Drawing.Point(740, 573);
             this.btnConsultas.Name = "btnConsultas";
-            this.btnConsultas.Size = new System.Drawing.Size(230, 45);
+            this.btnConsultas.Size = new System.Drawing.Size(155, 45);
             this.btnConsultas.TabIndex = 7;
             this.btnConsultas.Text = "CONSULTAS";
             this.btnConsultas.UseVisualStyleBackColor = false;
+            this.btnConsultas.Click += new System.EventHandler(this.btnConsultas_Click);
             // 
             // btnReportes
             // 
@@ -277,12 +282,56 @@
             this.btnReportes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReportes.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReportes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(65)))), ((int)(((byte)(74)))));
-            this.btnReportes.Location = new System.Drawing.Point(669, 573);
+            this.btnReportes.Location = new System.Drawing.Point(915, 573);
             this.btnReportes.Name = "btnReportes";
-            this.btnReportes.Size = new System.Drawing.Size(230, 45);
+            this.btnReportes.Size = new System.Drawing.Size(155, 45);
             this.btnReportes.TabIndex = 8;
             this.btnReportes.Text = "REPORTES";
             this.btnReportes.UseVisualStyleBackColor = false;
+            this.btnReportes.Click += new System.EventHandler(this.btnReportes_Click);
+            // 
+            // btnSalir
+            // 
+            this.btnSalir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(125)))), ((int)(((byte)(145)))));
+            this.btnSalir.Font = new System.Drawing.Font("Segoe UI Black", 12.096F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalir.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(65)))), ((int)(((byte)(74)))));
+            this.btnSalir.Location = new System.Drawing.Point(864, 10);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(206, 66);
+            this.btnSalir.TabIndex = 12;
+            this.btnSalir.Text = "CERRAR SESIÓN";
+            this.btnSalir.UseVisualStyleBackColor = false;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            // 
+            // btnClientes
+            // 
+            this.btnClientes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(160)))), ((int)(((byte)(183)))));
+            this.btnClientes.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnClientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClientes.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClientes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(65)))), ((int)(((byte)(74)))));
+            this.btnClientes.Location = new System.Drawing.Point(285, 573);
+            this.btnClientes.Name = "btnClientes";
+            this.btnClientes.Size = new System.Drawing.Size(155, 45);
+            this.btnClientes.TabIndex = 9;
+            this.btnClientes.Text = "CLIENTES";
+            this.btnClientes.UseVisualStyleBackColor = false;
+            this.btnClientes.Click += new System.EventHandler(this.btnClientes_Click);
+            // 
+            // btnReservayMenu
+            // 
+            this.btnReservayMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(160)))), ((int)(((byte)(183)))));
+            this.btnReservayMenu.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnReservayMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReservayMenu.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReservayMenu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(65)))), ((int)(((byte)(74)))));
+            this.btnReservayMenu.Location = new System.Drawing.Point(463, 573);
+            this.btnReservayMenu.Name = "btnReservayMenu";
+            this.btnReservayMenu.Size = new System.Drawing.Size(256, 45);
+            this.btnReservayMenu.TabIndex = 10;
+            this.btnReservayMenu.Text = "DETALLE DE RESERVA Y MENÚ";
+            this.btnReservayMenu.UseVisualStyleBackColor = false;
+            this.btnReservayMenu.Click += new System.EventHandler(this.btnReservayMenu_Click);
             // 
             // Form2
             // 
@@ -290,6 +339,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(1082, 653);
+            this.Controls.Add(this.btnReservayMenu);
+            this.Controls.Add(this.btnClientes);
             this.Controls.Add(this.btnReportes);
             this.Controls.Add(this.btnConsultas);
             this.Controls.Add(this.btnMesas);
@@ -309,8 +360,8 @@
             this.pnlMesas.ResumeLayout(false);
             this.pnlClientes.ResumeLayout(false);
             this.pnlGraficaReservas.ResumeLayout(false);
-            this.pnlGraficaMesas.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.chartReservas)).EndInit();
+            this.pnlGraficaMesas.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.chartMesas)).EndInit();
             this.ResumeLayout(false);
 
@@ -338,5 +389,8 @@
         private System.Windows.Forms.Button btnMesas;
         private System.Windows.Forms.Button btnConsultas;
         private System.Windows.Forms.Button btnReportes;
+        private System.Windows.Forms.Button btnSalir;
+        private System.Windows.Forms.Button btnReservayMenu;
+        private System.Windows.Forms.Button btnClientes;
     }
 }
