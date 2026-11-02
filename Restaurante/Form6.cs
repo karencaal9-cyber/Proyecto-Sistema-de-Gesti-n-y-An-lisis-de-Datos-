@@ -51,12 +51,12 @@ namespace Restaurante
         {
             string sql = @"SELECT 
                                 r.IdReserva, 
-                                c.Nombre + ' ' + c.Apellido AS Cliente, 
-                                c.Telefono, 
+                                c.NombreCliente + ' ' + c.ApellidoCliente AS Cliente, 
+                                c.TelefonoCliente, 
                                 r.FechaReserva, 
                                 r.HoraReserva, 
-                                e.Nombre AS Empleado, 
-                                e.Rol 
+                                e.NombreEmpleado AS Empleado, 
+                                e.RolEmpleado AS Rol 
                            FROM Reservas r
                            INNER JOIN Clientes c ON r.IdCliente = c.IdCliente
                            INNER JOIN Empleados e ON r.IdEmpleado = e.IdEmpleado
@@ -66,19 +66,19 @@ namespace Restaurante
 
             if (!string.IsNullOrEmpty(txtNumeroCliente.Text.Trim()))
             {
-                sql += " AND c.Telefono LIKE @Telefono";
+                sql += " AND c.TelefonoCliente LIKE @Telefono";
                 listaParametros.Add(new SqlParameter("@Telefono", "%" + txtNumeroCliente.Text.Trim() + "%"));
             }
 
             if (!string.IsNullOrEmpty(txtApellidoCliente.Text.Trim()))
             {
-                sql += "AND c.Apellido LIKE @Apellido";
+                sql += "AND c.ApellidoCliente LIKE @Apellido";
                 listaParametros.Add(new SqlParameter("@Apellido", "%" + txtApellidoCliente.Text.Trim() + "%"));
             }
 
             if (cmbRolEmpleado.SelectedValue != null && cmbRolEmpleado.SelectedValue.ToString() != "Todos")
             {
-                sql += " AND e.Rol = @Rol";
+                sql += " AND e.RolEmpleado = @Rol";
                 listaParametros.Add(new SqlParameter("@Rol", cmbRolEmpleado.SelectedValue.ToString()));
             }
 
@@ -98,7 +98,7 @@ namespace Restaurante
 
         private void CargarRoles()
         {
-            string sql = "SELECT DISTINCT Rol FROM Empleados WHERE Rol IS NOT NULL";
+            string sql = "SELECT DISTINCT RolEmpleado AS Rol FROM Empleados WHERE RolEmpleado IS NOT NULL";
             DataTable dtRoles = ObtenerDatos(sql);
 
             DataRow filaTodos = dtRoles.NewRow();
@@ -126,18 +126,14 @@ namespace Restaurante
             Limpiar();
         }
 
-        private void btnForm7_Click(object sender, EventArgs e)
-        {
-            Form7 formReportes = new Form7();
-
-            formReportes.Show();
-
-            this.Close();
-        }
-
         private void cmbRolEmpleado_SelectedIndexChanged(object sender, EventArgs e)
         {
             FiltrarReservas();
+        }
+
+        private void btnRegresarMenu_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

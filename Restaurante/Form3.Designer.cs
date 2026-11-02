@@ -77,7 +77,7 @@
             this.lblTitulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(93)))), ((int)(((byte)(122)))));
             this.lblTitulo.Location = new System.Drawing.Point(301, 24);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(438, 41);
+            this.lblTitulo.Size = new System.Drawing.Size(468, 45);
             this.lblTitulo.TabIndex = 1;
             this.lblTitulo.Text = "GESTIÓN DE MESAS Y ZONAS";
             // 
@@ -167,7 +167,7 @@
             this.lblNumeroMesa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(93)))), ((int)(((byte)(122)))));
             this.lblNumeroMesa.Location = new System.Drawing.Point(51, 163);
             this.lblNumeroMesa.Name = "lblNumeroMesa";
-            this.lblNumeroMesa.Size = new System.Drawing.Size(140, 23);
+            this.lblNumeroMesa.Size = new System.Drawing.Size(150, 25);
             this.lblNumeroMesa.TabIndex = 7;
             this.lblNumeroMesa.Text = "Número de mesa:";
             // 
@@ -201,7 +201,7 @@
             this.lblEstado.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(93)))), ((int)(((byte)(122)))));
             this.lblEstado.Location = new System.Drawing.Point(51, 128);
             this.lblEstado.Name = "lblEstado";
-            this.lblEstado.Size = new System.Drawing.Size(62, 23);
+            this.lblEstado.Size = new System.Drawing.Size(68, 25);
             this.lblEstado.TabIndex = 5;
             this.lblEstado.Text = "Estado:";
             // 
@@ -223,7 +223,7 @@
             this.lblZona.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(93)))), ((int)(((byte)(122)))));
             this.lblZona.Location = new System.Drawing.Point(55, 87);
             this.lblZona.Name = "lblZona";
-            this.lblZona.Size = new System.Drawing.Size(52, 23);
+            this.lblZona.Size = new System.Drawing.Size(56, 25);
             this.lblZona.TabIndex = 4;
             this.lblZona.Text = "Zona:";
             // 
@@ -256,7 +256,7 @@
             this.lblCapacidad.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(93)))), ((int)(((byte)(122)))));
             this.lblCapacidad.Location = new System.Drawing.Point(55, 50);
             this.lblCapacidad.Name = "lblCapacidad";
-            this.lblCapacidad.Size = new System.Drawing.Size(90, 23);
+            this.lblCapacidad.Size = new System.Drawing.Size(101, 25);
             this.lblCapacidad.TabIndex = 2;
             this.lblCapacidad.Text = "Capacidad:";
             // 
@@ -330,7 +330,7 @@
             this.lblLeyenda.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(93)))), ((int)(((byte)(122)))));
             this.lblLeyenda.Location = new System.Drawing.Point(474, 597);
             this.lblLeyenda.Name = "lblLeyenda";
-            this.lblLeyenda.Size = new System.Drawing.Size(194, 23);
+            this.lblLeyenda.Size = new System.Drawing.Size(208, 25);
             this.lblLeyenda.TabIndex = 8;
             this.lblLeyenda.Text = "ESTADOS DE LAS MESAS:";
             // 
@@ -342,7 +342,7 @@
             this.lblDisponible.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(65)))), ((int)(((byte)(74)))));
             this.lblDisponible.Location = new System.Drawing.Point(680, 597);
             this.lblDisponible.Name = "lblDisponible";
-            this.lblDisponible.Size = new System.Drawing.Size(86, 23);
+            this.lblDisponible.Size = new System.Drawing.Size(96, 25);
             this.lblDisponible.TabIndex = 9;
             this.lblDisponible.Text = "Disponible";
             // 
@@ -354,7 +354,7 @@
             this.lblOcupada.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(65)))), ((int)(((byte)(74)))));
             this.lblOcupada.Location = new System.Drawing.Point(788, 597);
             this.lblOcupada.Name = "lblOcupada";
-            this.lblOcupada.Size = new System.Drawing.Size(75, 23);
+            this.lblOcupada.Size = new System.Drawing.Size(84, 25);
             this.lblOcupada.TabIndex = 10;
             this.lblOcupada.Text = "Ocupada";
             // 
@@ -366,7 +366,7 @@
             this.lblReservada.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(65)))), ((int)(((byte)(74)))));
             this.lblReservada.Location = new System.Drawing.Point(886, 597);
             this.lblReservada.Name = "lblReservada";
-            this.lblReservada.Size = new System.Drawing.Size(84, 23);
+            this.lblReservada.Size = new System.Drawing.Size(92, 25);
             this.lblReservada.TabIndex = 11;
             this.lblReservada.Text = "Reservada";
             // 
@@ -387,7 +387,7 @@
             this.MinimumSize = new System.Drawing.Size(1000, 650);
             this.Name = "Form3";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Gestión de Mesas y Zonas.";
+            this.Text = "Gestión de Mesas y Zonas - Sistema de Reservas";
             this.Load += new System.EventHandler(this.Form3_Load);
             this.pnlEncabezado.ResumeLayout(false);
             this.pnlEncabezado.PerformLayout();

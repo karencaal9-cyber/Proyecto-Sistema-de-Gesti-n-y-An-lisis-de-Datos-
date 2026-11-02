@@ -16,6 +16,7 @@ using System.Windows.Forms;
 using System.Windows.Forms.DataVisualization.Charting;
 using Restaurante.Data;
 
+
 namespace Restaurante
 {
     public partial class Form7 : Form
@@ -67,7 +68,7 @@ namespace Restaurante
                                 z.NombreZona AS Zona,
                                 m.CapacidadMesa AS Capacidad,
                                 m.EstadoMesa AS Estado,
-                                c.Nombre + ' ' + c.Apellido AS Cliente, 
+                                c.NombreCliente + ' ' + c.ApellidoCliente AS Cliente, 
                                 r.FechaReserva, 
                                 r.HoraReserva
                            FROM Reservas r
@@ -220,12 +221,12 @@ namespace Restaurante
         {
             string query = @"SELECT 
                                 c.IdCliente,
-                                c.Nombre + ' ' + c.Apellido AS NombreCliente,
-                                c.Telefono,
+                                c.NombreCliente + ' ' + c.ApellidoCliente AS NombreCliente,
+                                c.TelefonoCliente AS Telefono,
                                 COUNT(r.IdReserva) AS TotalReservasRealizadas
                              FROM Clientes c
                              INNER JOIN Reservas r ON c.IdCliente = r.IdCliente
-                             GROUP BY c.IdCliente, c.Nombre, c.Apellido, c.Telefono
+                             GROUP BY c.IdCliente, c.NombreCliente, c.ApellidoCliente, c.TelefonoCliente
                              ORDER BY TotalReservasRealizadas DESC";
             return ObtenerDatos(query);
         }
@@ -249,6 +250,7 @@ namespace Restaurante
                     archivoExcel.Delete();
                 }
 
+                ExcelPackage.License.SetNonCommercialPersonal("Cesia");
                 using (ExcelPackage package = new ExcelPackage(archivoExcel))
                 {
                     ExcelWorksheet hoja = package.Workbook.Worksheets.Add("Clientes frecuentes");
@@ -284,13 +286,6 @@ namespace Restaurante
         private void btnRegresarMenu_Click(object sender, EventArgs e)
         {
             this.Close();
-            //Form1 principal = new Form1();
-            //principal.Show();
-        }
-
-        private void btnSalir_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
         }
 
         private void tmpMesasDisponibles_ValueChanged(object sender, EventArgs e)
