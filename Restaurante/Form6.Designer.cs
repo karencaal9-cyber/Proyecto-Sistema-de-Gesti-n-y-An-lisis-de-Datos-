@@ -48,7 +48,7 @@
             this.lblForm6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(93)))), ((int)(((byte)(122)))));
             this.lblForm6.Location = new System.Drawing.Point(321, 12);
             this.lblForm6.Name = "lblForm6";
-            this.lblForm6.Size = new System.Drawing.Size(587, 57);
+            this.lblForm6.Size = new System.Drawing.Size(463, 45);
             this.lblForm6.TabIndex = 0;
             this.lblForm6.Text = "CONSULTAS COMBINADAS";
             // 
@@ -56,7 +56,7 @@
             // 
             this.dgvForm6.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvForm6.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvForm6.Location = new System.Drawing.Point(68, 331);
+            this.dgvForm6.Location = new System.Drawing.Point(25, 331);
             this.dgvForm6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dgvForm6.Name = "dgvForm6";
             this.dgvForm6.RowHeadersWidth = 53;
@@ -71,7 +71,7 @@
             this.lblNumeroCliente.Font = new System.Drawing.Font("Segoe UI Semibold", 9.792F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNumeroCliente.Location = new System.Drawing.Point(11, 122);
             this.lblNumeroCliente.Name = "lblNumeroCliente";
-            this.lblNumeroCliente.Size = new System.Drawing.Size(258, 23);
+            this.lblNumeroCliente.Size = new System.Drawing.Size(209, 19);
             this.lblNumeroCliente.TabIndex = 2;
             this.lblNumeroCliente.Text = "Buscar por número de teléfono: ";
             // 
@@ -80,9 +80,9 @@
             this.lblApellidoCliente.AutoSize = true;
             this.lblApellidoCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblApellidoCliente.Font = new System.Drawing.Font("Segoe UI Semibold", 9.792F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblApellidoCliente.Location = new System.Drawing.Point(593, 122);
+            this.lblApellidoCliente.Location = new System.Drawing.Point(557, 122);
             this.lblApellidoCliente.Name = "lblApellidoCliente";
-            this.lblApellidoCliente.Size = new System.Drawing.Size(165, 23);
+            this.lblApellidoCliente.Size = new System.Drawing.Size(136, 19);
             this.lblApellidoCliente.TabIndex = 3;
             this.lblApellidoCliente.Text = "Buscar por apellido: ";
             // 
@@ -92,7 +92,7 @@
             this.btnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLimpiar.Font = new System.Drawing.Font("Segoe UI", 12.096F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLimpiar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(65)))), ((int)(((byte)(74)))));
-            this.btnLimpiar.Location = new System.Drawing.Point(427, 255);
+            this.btnLimpiar.Location = new System.Drawing.Point(384, 255);
             this.btnLimpiar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(176, 51);
@@ -104,28 +104,28 @@
             // cmbRolEmpleado
             // 
             this.cmbRolEmpleado.FormattingEnabled = true;
-            this.cmbRolEmpleado.Location = new System.Drawing.Point(565, 192);
+            this.cmbRolEmpleado.Location = new System.Drawing.Point(506, 191);
             this.cmbRolEmpleado.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cmbRolEmpleado.Name = "cmbRolEmpleado";
-            this.cmbRolEmpleado.Size = new System.Drawing.Size(223, 31);
+            this.cmbRolEmpleado.Size = new System.Drawing.Size(223, 25);
             this.cmbRolEmpleado.TabIndex = 7;
             this.cmbRolEmpleado.SelectedIndexChanged += new System.EventHandler(this.cmbRolEmpleado_SelectedIndexChanged);
             // 
             // txtNumeroCliente
             // 
             this.txtNumeroCliente.Font = new System.Drawing.Font("Segoe UI", 12.096F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNumeroCliente.Location = new System.Drawing.Point(266, 119);
+            this.txtNumeroCliente.Location = new System.Drawing.Point(235, 119);
             this.txtNumeroCliente.Name = "txtNumeroCliente";
-            this.txtNumeroCliente.Size = new System.Drawing.Size(205, 35);
+            this.txtNumeroCliente.Size = new System.Drawing.Size(205, 29);
             this.txtNumeroCliente.TabIndex = 8;
             this.txtNumeroCliente.TextChanged += new System.EventHandler(this.txtNumeroCliente_TextChanged);
             // 
             // txtApellidoCliente
             // 
             this.txtApellidoCliente.Font = new System.Drawing.Font("Segoe UI", 12.096F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtApellidoCliente.Location = new System.Drawing.Point(751, 119);
+            this.txtApellidoCliente.Location = new System.Drawing.Point(699, 119);
             this.txtApellidoCliente.Name = "txtApellidoCliente";
-            this.txtApellidoCliente.Size = new System.Drawing.Size(214, 35);
+            this.txtApellidoCliente.Size = new System.Drawing.Size(214, 29);
             this.txtApellidoCliente.TabIndex = 9;
             this.txtApellidoCliente.TextChanged += new System.EventHandler(this.txtApellidoCliente_TextChanged);
             // 
@@ -134,9 +134,9 @@
             this.lblRolEmpleado.AutoSize = true;
             this.lblRolEmpleado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblRolEmpleado.Font = new System.Drawing.Font("Segoe UI Semibold", 9.792F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRolEmpleado.Location = new System.Drawing.Point(335, 192);
+            this.lblRolEmpleado.Location = new System.Drawing.Point(317, 191);
             this.lblRolEmpleado.Name = "lblRolEmpleado";
-            this.lblRolEmpleado.Size = new System.Drawing.Size(224, 23);
+            this.lblRolEmpleado.Size = new System.Drawing.Size(183, 19);
             this.lblRolEmpleado.TabIndex = 10;
             this.lblRolEmpleado.Text = "Filtrar por rol de empleado: ";
             // 
@@ -156,10 +156,10 @@
             // 
             // Form6
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 23F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(221)))), ((int)(((byte)(232)))));
-            this.ClientSize = new System.Drawing.Size(1036, 578);
+            this.ClientSize = new System.Drawing.Size(957, 578);
             this.Controls.Add(this.btnRegresarMenu);
             this.Controls.Add(this.lblRolEmpleado);
             this.Controls.Add(this.txtApellidoCliente);
