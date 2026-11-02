@@ -28,9 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             this.pnlEncabezado = new System.Windows.Forms.Panel();
+            this.btnSalir = new System.Windows.Forms.Button();
             this.lblTitulo = new System.Windows.Forms.Label();
             this.pnlReservas = new System.Windows.Forms.FlowLayoutPanel();
             this.lblTituloReservas = new System.Windows.Forms.Label();
@@ -50,7 +51,6 @@
             this.btnMesas = new System.Windows.Forms.Button();
             this.btnConsultas = new System.Windows.Forms.Button();
             this.btnReportes = new System.Windows.Forms.Button();
-            this.btnSalir = new System.Windows.Forms.Button();
             this.btnClientes = new System.Windows.Forms.Button();
             this.btnReservayMenu = new System.Windows.Forms.Button();
             this.pnlEncabezado.SuspendLayout();
@@ -73,6 +73,19 @@
             this.pnlEncabezado.Name = "pnlEncabezado";
             this.pnlEncabezado.Size = new System.Drawing.Size(1082, 85);
             this.pnlEncabezado.TabIndex = 0;
+            // 
+            // btnSalir
+            // 
+            this.btnSalir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(125)))), ((int)(((byte)(145)))));
+            this.btnSalir.Font = new System.Drawing.Font("Segoe UI Black", 12.096F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalir.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(65)))), ((int)(((byte)(74)))));
+            this.btnSalir.Location = new System.Drawing.Point(864, 10);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(206, 66);
+            this.btnSalir.TabIndex = 12;
+            this.btnSalir.Text = "CERRAR SESIÓN";
+            this.btnSalir.UseVisualStyleBackColor = false;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // lblTitulo
             // 
@@ -205,8 +218,8 @@
             // 
             // chartReservas
             // 
-            chartArea5.Name = "ChartArea1";
-            this.chartReservas.ChartAreas.Add(chartArea5);
+            chartArea1.Name = "ChartArea1";
+            this.chartReservas.ChartAreas.Add(chartArea1);
             this.chartReservas.Location = new System.Drawing.Point(3, 33);
             this.chartReservas.Name = "chartReservas";
             this.chartReservas.Size = new System.Drawing.Size(480, 220);
@@ -237,8 +250,8 @@
             // 
             // chartMesas
             // 
-            chartArea6.Name = "ChartArea1";
-            this.chartMesas.ChartAreas.Add(chartArea6);
+            chartArea2.Name = "ChartArea1";
+            this.chartMesas.ChartAreas.Add(chartArea2);
             this.chartMesas.Location = new System.Drawing.Point(3, 33);
             this.chartMesas.Name = "chartMesas";
             this.chartMesas.Size = new System.Drawing.Size(480, 220);
@@ -290,19 +303,6 @@
             this.btnReportes.UseVisualStyleBackColor = false;
             this.btnReportes.Click += new System.EventHandler(this.btnReportes_Click);
             // 
-            // btnSalir
-            // 
-            this.btnSalir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(125)))), ((int)(((byte)(145)))));
-            this.btnSalir.Font = new System.Drawing.Font("Segoe UI Black", 12.096F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalir.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(65)))), ((int)(((byte)(74)))));
-            this.btnSalir.Location = new System.Drawing.Point(864, 10);
-            this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(206, 66);
-            this.btnSalir.TabIndex = 12;
-            this.btnSalir.Text = "CERRAR SESIÓN";
-            this.btnSalir.UseVisualStyleBackColor = false;
-            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
-            // 
             // btnClientes
             // 
             this.btnClientes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(160)))), ((int)(((byte)(183)))));
@@ -353,7 +353,7 @@
             this.MinimumSize = new System.Drawing.Size(1000, 650);
             this.Name = "Form2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Dashboard - Sistema de Reservas";
+            this.Text = "dashboard?";
             this.Load += new System.EventHandler(this.Form2_Load);
             this.pnlEncabezado.ResumeLayout(false);
             this.pnlReservas.ResumeLayout(false);

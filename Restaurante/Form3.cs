@@ -281,5 +281,56 @@ private void CargarMapaMesas()
         {
 
         }
+
+        private void btnGuardar_Click_1(object sender, EventArgs e)
+        {
+            try
+            {
+                if (nudCapacidad.Value < 1)
+                {
+                    MessageBox.Show("La capacidad debe ser mayor que cero.");
+                    return;
+                }
+
+                if (cmbZona.SelectedIndex == -1)
+                {
+                    MessageBox.Show("Selecciona una zona para la mesa.");
+                    return;
+                }
+
+                if (cmbEstado.SelectedIndex == -1)
+                {
+                    MessageBox.Show("Selecciona el estado de la mesa.");
+                    return;
+                }
+
+                Mesa mesa = new Mesa();
+
+                mesa.CapacidadMesa = Convert.ToInt32(nudCapacidad.Value);
+                mesa.EstadoMesa = cmbEstado.SelectedItem.ToString();
+                mesa.IdZona = Convert.ToInt32(cmbZona.SelectedValue);
+
+                mesaDAL.AgregarMesa(mesa);
+
+                MessageBox.Show(
+                    "¡Mesa agregada correctamente!",
+                    "Registro exitoso",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information
+                );
+
+                CargarMesas();
+                LimpiarCampos();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(
+                    "No se pudo agregar la mesa: " + ex.Message,
+                    "Error",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error
+                );
+            }
+        }
     }
 }
