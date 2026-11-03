@@ -43,6 +43,7 @@
             this.btnNuevo = new System.Windows.Forms.Button();
             this.btnRegresarMenu = new System.Windows.Forms.Button();
             this.lblIdReserva = new System.Windows.Forms.Label();
+            this.cmbReservas = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.nudcantidadd)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDetalle)).BeginInit();
             this.SuspendLayout();
@@ -63,7 +64,7 @@
             // 
             this.lblPlatillo.AutoSize = true;
             this.lblPlatillo.Font = new System.Drawing.Font("Segoe UI Semibold", 12.096F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPlatillo.Location = new System.Drawing.Point(127, 113);
+            this.lblPlatillo.Location = new System.Drawing.Point(127, 126);
             this.lblPlatillo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPlatillo.Name = "lblPlatillo";
             this.lblPlatillo.Size = new System.Drawing.Size(209, 30);
@@ -74,7 +75,7 @@
             // 
             this.cmbMenu.Font = new System.Drawing.Font("Segoe UI", 13.824F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbMenu.FormattingEnabled = true;
-            this.cmbMenu.Location = new System.Drawing.Point(340, 113);
+            this.cmbMenu.Location = new System.Drawing.Point(340, 126);
             this.cmbMenu.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.cmbMenu.Name = "cmbMenu";
             this.cmbMenu.Size = new System.Drawing.Size(335, 40);
@@ -84,7 +85,7 @@
             // 
             this.lblCantidadDetalle.AutoSize = true;
             this.lblCantidadDetalle.Font = new System.Drawing.Font("Segoe UI Semibold", 12.096F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCantidadDetalle.Location = new System.Drawing.Point(127, 178);
+            this.lblCantidadDetalle.Location = new System.Drawing.Point(127, 191);
             this.lblCantidadDetalle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCantidadDetalle.Name = "lblCantidadDetalle";
             this.lblCantidadDetalle.Size = new System.Drawing.Size(104, 30);
@@ -94,7 +95,7 @@
             // nudcantidadd
             // 
             this.nudcantidadd.Font = new System.Drawing.Font("Segoe UI", 13.824F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nudcantidadd.Location = new System.Drawing.Point(340, 178);
+            this.nudcantidadd.Location = new System.Drawing.Point(340, 191);
             this.nudcantidadd.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.nudcantidadd.Maximum = new decimal(new int[] {
             20,
@@ -119,7 +120,7 @@
             // 
             this.lblObservaciones.AutoSize = true;
             this.lblObservaciones.Font = new System.Drawing.Font("Segoe UI Semibold", 12.096F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblObservaciones.Location = new System.Drawing.Point(127, 247);
+            this.lblObservaciones.Location = new System.Drawing.Point(127, 260);
             this.lblObservaciones.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblObservaciones.Name = "lblObservaciones";
             this.lblObservaciones.Size = new System.Drawing.Size(158, 30);
@@ -129,7 +130,7 @@
             // txtObservaciones
             // 
             this.txtObservaciones.Font = new System.Drawing.Font("Segoe UI", 13.824F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtObservaciones.Location = new System.Drawing.Point(340, 247);
+            this.txtObservaciones.Location = new System.Drawing.Point(340, 260);
             this.txtObservaciones.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txtObservaciones.Name = "txtObservaciones";
             this.txtObservaciones.Size = new System.Drawing.Size(335, 39);
@@ -223,12 +224,22 @@
             // 
             this.lblIdReserva.AutoSize = true;
             this.lblIdReserva.Font = new System.Drawing.Font("Segoe UI Semibold", 12.096F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIdReserva.Location = new System.Drawing.Point(68, 64);
+            this.lblIdReserva.Location = new System.Drawing.Point(106, 81);
             this.lblIdReserva.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblIdReserva.Name = "lblIdReserva";
-            this.lblIdReserva.Size = new System.Drawing.Size(149, 30);
+            this.lblIdReserva.Size = new System.Drawing.Size(230, 30);
             this.lblIdReserva.TabIndex = 16;
-            this.lblIdReserva.Text = "ID de Reserva:";
+            this.lblIdReserva.Text = "Seleccionar Id Reserva:";
+            // 
+            // cmbReservas
+            // 
+            this.cmbReservas.Font = new System.Drawing.Font("Segoe UI", 9.792F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbReservas.FormattingEnabled = true;
+            this.cmbReservas.Location = new System.Drawing.Point(340, 81);
+            this.cmbReservas.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.cmbReservas.Name = "cmbReservas";
+            this.cmbReservas.Size = new System.Drawing.Size(418, 31);
+            this.cmbReservas.TabIndex = 17;
             // 
             // Form5
             // 
@@ -236,6 +247,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(221)))), ((int)(((byte)(232)))));
             this.ClientSize = new System.Drawing.Size(924, 575);
+            this.Controls.Add(this.cmbReservas);
             this.Controls.Add(this.lblIdReserva);
             this.Controls.Add(this.btnRegresarMenu);
             this.Controls.Add(this.btnNuevo);
@@ -280,6 +292,7 @@
         private System.Windows.Forms.Button btnNuevo;
         private System.Windows.Forms.Button btnRegresarMenu;
         private System.Windows.Forms.Label lblIdReserva;
+        private System.Windows.Forms.ComboBox cmbReservas;
     }
 }
 
