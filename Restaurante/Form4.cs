@@ -384,5 +384,226 @@ namespace Restaurante
         private void lblBuscar_Click(object sender, EventArgs e)
         {
         }
+
+
+        private void btnAgregarCliente_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtNombre.Text) ||
+                string.IsNullOrWhiteSpace(txtApellido.Text) ||
+                string.IsNullOrWhiteSpace(txtTelefono.Text))
+            {
+                MessageBox.Show("Complete el nombre, apellido y teléfono.");
+                return;
+            }
+
+            try
+            {
+                using (SqlConnection conexion = ConexionBD.ObtenerConexion())
+                {
+                    conexion.Open();
+
+                    string verificar = @"
+                SELECT COUNT(*) FROM Clientes
+                WHERE TelefonoCliente = @Telefono";
+
+                    using (SqlCommand cmd = new SqlCommand(verificar, conexion))
+                    {
+                        cmd.Parameters.Add("@Telefono", SqlDbType.VarChar)
+                            .Value = txtTelefono.Text.Trim();
+
+                        if (Convert.ToInt32(cmd.ExecuteScalar()) > 0)
+                        {
+                            MessageBox.Show("Ya existe un cliente con ese teléfono.");
+                            return;
+                        }
+                    }
+
+                    string consulta = @"
+                INSERT INTO Clientes
+                (NombreCliente, ApellidoCliente, TelefonoCliente, PuntosFidelidad)
+                OUTPUT INSERTED.IdCliente
+                VALUES (@Nombre, @Apellido, @Telefono, 0)";
+
+                    using (SqlCommand cmd = new SqlCommand(consulta, conexion))
+                    {
+                        cmd.Parameters.Add("@Nombre", SqlDbType.VarChar)
+                            .Value = txtNombre.Text.Trim();
+
+                        cmd.Parameters.Add("@Apellido", SqlDbType.VarChar)
+                            .Value = txtApellido.Text.Trim();
+
+                        cmd.Parameters.Add("@Telefono", SqlDbType.VarChar)
+                            .Value = txtTelefono.Text.Trim();
+
+                        idClienteActual = Convert.ToInt32(cmd.ExecuteScalar());
+                    }
+                }
+
+                MessageBox.Show("Cliente agregado correctamente.",
+                    "Registro exitoso",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al agregar cliente: " + ex.Message);
+            }
+        }
+
+
+        private void btnEditarCliente_Click(object sender, EventArgs e)
+        {
+            if (idClienteActual == 0)
+            {
+                MessageBox.Show("Primero busque y seleccione un cliente.");
+                return;
+            }
+
+            if (string.IsNullOrWhiteSpace(txtNombre.Text) ||
+                string.IsNullOrWhiteSpace(txtApellido.Text) ||
+                string.IsNullOrWhiteSpace(txtTelefono.Text))
+            {
+                MessageBox.Show("Complete todos los datos del cliente.");
+                return;
+            }
+
+            try
+            {
+                using (SqlConnection conexion = ConexionBD.ObtenerConexion())
+                {
+                    conexion.Open();
+
+                    string verificar = @"
+                SELECT COUNT(*) FROM Clientes
+                WHERE TelefonoCliente = @Telefono
+                AND IdCliente <> @IdCliente";
+
+                    using (SqlCommand cmd = new SqlCommand(verificar, conexion))
+                    {
+                        cmd.Parameters.Add("@Telefono", SqlDbType.VarChar)
+                            .Value = txtTelefono.Text.Trim();
+
+                        cmd.Parameters.Add("@IdCliente", SqlDbType.Int)
+                            .Value = idClienteActual;
+
+                        if (Convert.ToInt32(cmd.ExecuteScalar()) > 0)
+                        {
+                            MessageBox.Show("Ese teléfono ya pertenece a otro cliente.");
+                            return;
+                        }
+                    }
+
+                    string consulta = @"
+                UPDATE Clientes
+                SET NombreCliente = @Nombre,
+                    ApellidoCliente = @Apellido,
+                    TelefonoCliente = @Telefono
+                WHERE IdCliente = @IdCliente";
+
+                    using (SqlCommand cmd = new SqlCommand(consulta, conexion))
+                    {
+                        cmd.Parameters.Add("@Nombre", SqlDbType.VarChar)
+                            .Value = txtNombre.Text.Trim();
+
+                        cmd.Parameters.Add("@Apellido", SqlDbType.VarChar)
+                            .Value = txtApellido.Text.Trim();
+
+                        cmd.Parameters.Add("@Telefono", SqlDbType.VarChar)
+                            .Value = txtTelefono.Text.Trim();
+
+                        cmd.Parameters.Add("@IdCliente", SqlDbType.Int)
+                            .Value = idClienteActual;
+
+                        int filas = cmd.ExecuteNonQuery();
+
+                        if (filas > 0)
+                        {
+                            MessageBox.Show("Cliente actualizado correctamente.");
+                        }
+                        else
+                        {
+                            MessageBox.Show("No se encontró el cliente.");
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al editar cliente: " + ex.Message);
+            }
+        }
+
+
+        private void btnQuitarCliente_Click(object sender, EventArgs e)
+        {
+            if (idClienteActual == 0)
+            {
+                MessageBox.Show("Primero busque el cliente que desea quitar.");
+                return;
+            }
+
+            DialogResult respuesta = MessageBox.Show(
+                "¿Está seguro de eliminar este cliente?",
+                "Confirmar eliminación",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Warning);
+
+            if (respuesta != DialogResult.Yes)
+                return;
+
+            try
+            {
+                using (SqlConnection conexion = ConexionBD.ObtenerConexion())
+                {
+                    conexion.Open();
+
+                    string verificar = @"
+                SELECT COUNT(*) FROM Reservas
+                WHERE IdCliente = @IdCliente";
+
+                    using (SqlCommand cmd = new SqlCommand(verificar, conexion))
+                    {
+                        cmd.Parameters.Add("@IdCliente", SqlDbType.Int)
+                            .Value = idClienteActual;
+
+                        int reservas = Convert.ToInt32(cmd.ExecuteScalar());
+
+                        if (reservas > 0)
+                        {
+                            MessageBox.Show(
+                                "No se puede eliminar este cliente porque tiene reservas registradas.");
+                            return;
+                        }
+                    }
+
+                    string consulta = @"
+                DELETE FROM Clientes
+                WHERE IdCliente = @IdCliente";
+
+                    using (SqlCommand cmd = new SqlCommand(consulta, conexion))
+                    {
+                        cmd.Parameters.Add("@IdCliente", SqlDbType.Int)
+                            .Value = idClienteActual;
+
+                        int filas = cmd.ExecuteNonQuery();
+
+                        if (filas > 0)
+                        {
+                            MessageBox.Show("Cliente eliminado correctamente.");
+                            LimpiarCampos();
+                        }
+                        else
+                        {
+                            MessageBox.Show("No se encontró el cliente.");
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al eliminar cliente: " + ex.Message);
+            }
+        }
+
     }
 }

@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnlEncabezado = new System.Windows.Forms.Panel();
             this.lblTitulo = new System.Windows.Forms.Label();
             this.pnlCliente = new System.Windows.Forms.Panel();
@@ -59,6 +59,9 @@
             this.lblFecha = new System.Windows.Forms.Label();
             this.lblTituloReserva = new System.Windows.Forms.Label();
             this.dgvReservas = new System.Windows.Forms.DataGridView();
+            this.btnAgregarCliente = new System.Windows.Forms.Button();
+            this.btnEditarCliente = new System.Windows.Forms.Button();
+            this.btnQuitarCliente = new System.Windows.Forms.Button();
             this.pnlEncabezado.SuspendLayout();
             this.pnlCliente.SuspendLayout();
             this.pnlReserva.SuspendLayout();
@@ -93,6 +96,9 @@
             // 
             this.pnlCliente.BackColor = System.Drawing.Color.White;
             this.pnlCliente.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlCliente.Controls.Add(this.btnQuitarCliente);
+            this.pnlCliente.Controls.Add(this.btnEditarCliente);
+            this.pnlCliente.Controls.Add(this.btnAgregarCliente);
             this.pnlCliente.Controls.Add(this.btnBuscar);
             this.pnlCliente.Controls.Add(this.txtTelefono);
             this.pnlCliente.Controls.Add(this.txtApellido);
@@ -129,7 +135,7 @@
             this.txtTelefono.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(65)))), ((int)(((byte)(74)))));
             this.txtTelefono.Location = new System.Drawing.Point(96, 202);
             this.txtTelefono.Name = "txtTelefono";
-            this.txtTelefono.Size = new System.Drawing.Size(274, 26);
+            this.txtTelefono.Size = new System.Drawing.Size(274, 30);
             this.txtTelefono.TabIndex = 8;
             // 
             // txtApellido
@@ -138,7 +144,7 @@
             this.txtApellido.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(65)))), ((int)(((byte)(74)))));
             this.txtApellido.Location = new System.Drawing.Point(96, 160);
             this.txtApellido.Name = "txtApellido";
-            this.txtApellido.Size = new System.Drawing.Size(274, 26);
+            this.txtApellido.Size = new System.Drawing.Size(274, 30);
             this.txtApellido.TabIndex = 7;
             // 
             // txtNombre
@@ -147,7 +153,7 @@
             this.txtNombre.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(65)))), ((int)(((byte)(74)))));
             this.txtNombre.Location = new System.Drawing.Point(96, 112);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(274, 26);
+            this.txtNombre.Size = new System.Drawing.Size(274, 30);
             this.txtNombre.TabIndex = 6;
             // 
             // txtBuscar
@@ -156,7 +162,7 @@
             this.txtBuscar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(65)))), ((int)(((byte)(74)))));
             this.txtBuscar.Location = new System.Drawing.Point(177, 65);
             this.txtBuscar.Name = "txtBuscar";
-            this.txtBuscar.Size = new System.Drawing.Size(193, 26);
+            this.txtBuscar.Size = new System.Drawing.Size(193, 30);
             this.txtBuscar.TabIndex = 5;
             // 
             // lblTelefono
@@ -295,7 +301,7 @@
             0,
             0});
             this.nudAnticipo.Name = "nudAnticipo";
-            this.nudAnticipo.Size = new System.Drawing.Size(180, 26);
+            this.nudAnticipo.Size = new System.Drawing.Size(180, 30);
             this.nudAnticipo.TabIndex = 26;
             this.nudAnticipo.ThousandsSeparator = true;
             // 
@@ -306,7 +312,7 @@
             this.lblAnticipo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(93)))), ((int)(((byte)(122)))));
             this.lblAnticipo.Location = new System.Drawing.Point(20, 245);
             this.lblAnticipo.Name = "lblAnticipo";
-            this.lblAnticipo.Size = new System.Drawing.Size(87, 19);
+            this.lblAnticipo.Size = new System.Drawing.Size(102, 23);
             this.lblAnticipo.TabIndex = 30;
             this.lblAnticipo.Text = "Anticipo (Q):";
             // 
@@ -318,7 +324,7 @@
             this.cmbMesa.FormattingEnabled = true;
             this.cmbMesa.Location = new System.Drawing.Point(73, 197);
             this.cmbMesa.Name = "cmbMesa";
-            this.cmbMesa.Size = new System.Drawing.Size(180, 27);
+            this.cmbMesa.Size = new System.Drawing.Size(180, 31);
             this.cmbMesa.TabIndex = 26;
             // 
             // lblMesa
@@ -328,7 +334,7 @@
             this.lblMesa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(93)))), ((int)(((byte)(122)))));
             this.lblMesa.Location = new System.Drawing.Point(20, 200);
             this.lblMesa.Name = "lblMesa";
-            this.lblMesa.Size = new System.Drawing.Size(44, 19);
+            this.lblMesa.Size = new System.Drawing.Size(52, 23);
             this.lblMesa.TabIndex = 29;
             this.lblMesa.Text = "Mesa:";
             // 
@@ -348,7 +354,7 @@
             0,
             0});
             this.nudPersonas.Name = "nudPersonas";
-            this.nudPersonas.Size = new System.Drawing.Size(100, 26);
+            this.nudPersonas.Size = new System.Drawing.Size(100, 30);
             this.nudPersonas.TabIndex = 26;
             this.nudPersonas.Value = new decimal(new int[] {
             2,
@@ -363,7 +369,7 @@
             this.lblPersonas.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(93)))), ((int)(((byte)(122)))));
             this.lblPersonas.Location = new System.Drawing.Point(20, 155);
             this.lblPersonas.Name = "lblPersonas";
-            this.lblPersonas.Size = new System.Drawing.Size(149, 19);
+            this.lblPersonas.Size = new System.Drawing.Size(173, 23);
             this.lblPersonas.TabIndex = 28;
             this.lblPersonas.Text = "Cantidad de personas:";
             // 
@@ -378,7 +384,7 @@
             this.dtpHora.Location = new System.Drawing.Point(160, 103);
             this.dtpHora.Name = "dtpHora";
             this.dtpHora.ShowUpDown = true;
-            this.dtpHora.Size = new System.Drawing.Size(180, 29);
+            this.dtpHora.Size = new System.Drawing.Size(180, 34);
             this.dtpHora.TabIndex = 27;
             // 
             // dtpFecha
@@ -387,7 +393,7 @@
             this.dtpFecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpFecha.Location = new System.Drawing.Point(160, 61);
             this.dtpFecha.Name = "dtpFecha";
-            this.dtpFecha.Size = new System.Drawing.Size(180, 29);
+            this.dtpFecha.Size = new System.Drawing.Size(180, 34);
             this.dtpFecha.TabIndex = 26;
             // 
             // lblHora
@@ -397,7 +403,7 @@
             this.lblHora.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(93)))), ((int)(((byte)(122)))));
             this.lblHora.Location = new System.Drawing.Point(20, 110);
             this.lblHora.Name = "lblHora";
-            this.lblHora.Size = new System.Drawing.Size(111, 19);
+            this.lblHora.Size = new System.Drawing.Size(129, 23);
             this.lblHora.TabIndex = 2;
             this.lblHora.Text = "Hora de reserva:";
             // 
@@ -408,7 +414,7 @@
             this.lblFecha.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(93)))), ((int)(((byte)(122)))));
             this.lblFecha.Location = new System.Drawing.Point(20, 65);
             this.lblFecha.Name = "lblFecha";
-            this.lblFecha.Size = new System.Drawing.Size(116, 19);
+            this.lblFecha.Size = new System.Drawing.Size(134, 23);
             this.lblFecha.TabIndex = 1;
             this.lblFecha.Text = "Fecha de reserva:";
             // 
@@ -433,24 +439,24 @@
             this.dgvReservas.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvReservas.BackgroundColor = System.Drawing.Color.White;
             this.dgvReservas.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(221)))), ((int)(((byte)(232)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Modern No. 20", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(93)))), ((int)(((byte)(122)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvReservas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(221)))), ((int)(((byte)(232)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Modern No. 20", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(93)))), ((int)(((byte)(122)))));
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvReservas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvReservas.ColumnHeadersHeight = 40;
             this.dgvReservas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Modern No. 20", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(65)))), ((int)(((byte)(74)))));
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(221)))), ((int)(((byte)(232)))));
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(65)))), ((int)(((byte)(74)))));
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvReservas.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Modern No. 20", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(65)))), ((int)(((byte)(74)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(221)))), ((int)(((byte)(232)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(65)))), ((int)(((byte)(74)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvReservas.DefaultCellStyle = dataGridViewCellStyle6;
             this.dgvReservas.EnableHeadersVisualStyles = false;
             this.dgvReservas.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(195)))), ((int)(((byte)(207)))));
             this.dgvReservas.Location = new System.Drawing.Point(20, 417);
@@ -464,9 +470,54 @@
             this.dgvReservas.Size = new System.Drawing.Size(1154, 220);
             this.dgvReservas.TabIndex = 26;
             // 
+            // btnAgregarCliente
+            // 
+            this.btnAgregarCliente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(161)))), ((int)(((byte)(185)))));
+            this.btnAgregarCliente.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAgregarCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregarCliente.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregarCliente.ForeColor = System.Drawing.Color.White;
+            this.btnAgregarCliente.Location = new System.Drawing.Point(400, 115);
+            this.btnAgregarCliente.Name = "btnAgregarCliente";
+            this.btnAgregarCliente.Size = new System.Drawing.Size(100, 30);
+            this.btnAgregarCliente.TabIndex = 26;
+            this.btnAgregarCliente.Text = "Agregar";
+            this.btnAgregarCliente.UseVisualStyleBackColor = false;
+            this.btnAgregarCliente.Click += new System.EventHandler(this.btnAgregarCliente_Click);
+            // 
+            // btnEditarCliente
+            // 
+            this.btnEditarCliente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(199)))), ((int)(((byte)(213)))));
+            this.btnEditarCliente.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEditarCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEditarCliente.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditarCliente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(93)))), ((int)(((byte)(122)))));
+            this.btnEditarCliente.Location = new System.Drawing.Point(400, 160);
+            this.btnEditarCliente.Name = "btnEditarCliente";
+            this.btnEditarCliente.Size = new System.Drawing.Size(100, 30);
+            this.btnEditarCliente.TabIndex = 27;
+            this.btnEditarCliente.Text = "Editar ";
+            this.btnEditarCliente.UseVisualStyleBackColor = false;
+            this.btnEditarCliente.Click += new System.EventHandler(this.btnEditarCliente_Click);
+            // 
+            // btnQuitarCliente
+            // 
+            this.btnQuitarCliente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(199)))), ((int)(((byte)(213)))));
+            this.btnQuitarCliente.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnQuitarCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnQuitarCliente.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnQuitarCliente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(128)))), ((int)(((byte)(157)))));
+            this.btnQuitarCliente.Location = new System.Drawing.Point(400, 205);
+            this.btnQuitarCliente.Name = "btnQuitarCliente";
+            this.btnQuitarCliente.Size = new System.Drawing.Size(100, 30);
+            this.btnQuitarCliente.TabIndex = 28;
+            this.btnQuitarCliente.Text = "Quitar";
+            this.btnQuitarCliente.UseVisualStyleBackColor = false;
+            this.btnQuitarCliente.Click += new System.EventHandler(this.btnQuitarCliente_Click);
+            // 
             // Form4
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(245)))), ((int)(((byte)(248)))));
             this.ClientSize = new System.Drawing.Size(1182, 733);
@@ -523,5 +574,8 @@
         private System.Windows.Forms.Button btnLimpiar;
         private System.Windows.Forms.Button btnGuardarReserva;
         private System.Windows.Forms.DataGridView dgvReservas;
+        private System.Windows.Forms.Button btnQuitarCliente;
+        private System.Windows.Forms.Button btnEditarCliente;
+        private System.Windows.Forms.Button btnAgregarCliente;
     }
 }
